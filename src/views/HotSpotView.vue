@@ -3,6 +3,8 @@ import { computed, ref } from 'vue';
 import { RouterLink, useRoute, useRouter } from 'vue-router';
 import { storeToRefs } from 'pinia';
 import { useCouponStore } from '@/stores/coupon';
+import { useConnectionMessage } from '@/composables/useConnectionMessage';
+import { useHandleConnectionData } from '@/composables/useHandleConnectionData';
 import BaseDialog from '@/components/atoms/BaseDialog.vue';
 import CouponResultItem from '@/components/molecules/CouponResultItem.vue';
 
@@ -26,8 +28,18 @@ if (!activeItem.value?.id) {
 
 const isMapDialogOpen = ref(false);
 
+const handleLaunchMap = (event: { data: string }) => {
+  const result: { name: string; data: boolean } = JSON.parse(event.data);
+
+  if (!result.data) {
+    window.open(activeItem.value?.address.map, '_blank', 'noopener,noreferrer');
+  }
+};
+
+useHandleConnectionData(handleLaunchMap);
+
 const onMapOpenClick = () => {
-  window.open(activeItem.value?.address.map, '_blank', 'noopener,noreferrer');
+  useConnectionMessage('launch_map', activeItem.value?.address.map);
 };
 
 const isIntroduceExpand = ref(false);

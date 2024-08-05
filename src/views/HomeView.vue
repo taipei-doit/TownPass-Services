@@ -2,15 +2,53 @@
 import { computed, ref } from 'vue';
 import { RouterLink, useRoute } from 'vue-router';
 import { useFormStore } from '@/stores/form';
+import { useUserStore } from '@/stores/user';
+import { storeToRefs } from 'pinia';
+import { useConnectionMessage } from '@/composables/useConnectionMessage';
+import { useHandleConnectionData } from '@/composables/useHandleConnectionData';
 import ServiceTabsView from '@/components/organisms/ServiceTabsView.vue';
 import BaseInput from '@/components/atoms/BaseInput.vue';
 import ServiceStep from '@/components/molecules/ServiceStep.vue';
 import serviceListJson from '../../public/mock/service_list.json';
 import caseProgressJson from '../../public/mock/case_progress.json';
+import type { User } from '@/stores/user';
 
 const store = useFormStore();
 
 store.reset();
+
+const userStore = useUserStore();
+
+const { user } = storeToRefs(userStore);
+
+const handleUserInfo = (event: { data: string }) => {
+  const result: { name: string; data: User } = JSON.parse(event.data);
+
+  user.value = result.data;
+};
+
+/**
+ * 同頁面要處理多個雙向連結資料參考
+ */
+// const handleConnectionData = (event: { data: string }) => {
+//   const result: { name: string; data: any } = JSON.parse(event.data);
+//   const name = result.name;
+
+//   switch (name) {
+//     case 'userinfo':
+//       handleUserInfo(event);
+//       break;
+//     case 'phone_call':
+//       //....
+//       break;
+//     default:
+//       break;
+//   }
+// };
+
+useConnectionMessage('userinfo', null);
+
+useHandleConnectionData(handleUserInfo);
 
 const route = useRoute();
 
