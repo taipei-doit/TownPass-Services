@@ -1,6 +1,6 @@
-# citypass-microservices
+# TownPass-Services
 
-citypass-microservices project made with Vue3 in Vite.
+TownPass-Services project made with Vue3 in Vite.
 
 ## Recommended IDE Setup
 

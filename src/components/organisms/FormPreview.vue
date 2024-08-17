@@ -46,7 +46,13 @@ const applyFieldTextHandle = (field: string) => {
 
     return map.get(props.submitForm[field]);
   } else if (item.type === 'date_picker') {
-    return props.submitForm[field].toISOString().split('T')[0];
+    return props.submitForm[field]
+      .toLocaleDateString('zh-TW', {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit'
+      })
+      .replace(/\//g, '-');
   } else {
     return '';
   }
@@ -133,7 +139,7 @@ const onNegativeClick = () => {
       <li class="preview-item">
         <span class="field-name">聯絡地址</span>
         <span>
-          {{ `${props.submitForm?.city}${props.submitForm?.county}${props.submitForm?.address}` }}
+          {{ `${props.submitForm?.county}${props.submitForm?.city}${props.submitForm?.address}` }}
         </span>
       </li>
     </ul>

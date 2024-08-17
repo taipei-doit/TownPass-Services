@@ -11,6 +11,7 @@
           "type": "交通運輸、停車場、充電站",
           "data_type": "api",
           "request_url": "https://tcgbusfs.blob.core.windows.net/dotapp/youbike/v2/youbike_immediate.json",
+          "data_path": "",
           "format_fields": {
             "id": "sno",
             "name": "sna",
@@ -40,13 +41,6 @@
           ]
         },
         {
-          "id": "pa-2",
-          "name": "機車充電站",
-          "icon": "",
-          "agency": "台北市政府環境保護局",
-          "type": "交通運輸、停車場、充電站"
-        },
-        {
           "id": "pa-3",
           "name": "停車場",
           "icon": "",
@@ -54,6 +48,7 @@
           "type": "交通運輸、停車場、充電站",
           "data_type": "json",
           "request_url": "/public/mock/find-place/TCMSV_alldesc.json",
+          "data_path": "",
           "format_fields": {
             "id": "id",
             "name": "name",
@@ -81,50 +76,54 @@
         {
           "id": "pb-1",
           "name": "飲水機/提供飲水店家",
-          "icon": "@/assets/images/icon-drinking.svg",
+          "icon": "/public/images/icon_drinking.svg",
           "agency": "台北市政府環境保護局",
-          "type": "飲水機、公廁、哺集乳室、AED場所"
-        },
-        {
-          "id": "pb-2",
-          "name": "地區直飲台",
-          "icon": "",
-          "agency": "",
-          "type": "飲水機、公廁、哺集乳室、AED場所"
+          "type": "飲水機、公廁、哺集乳室、AED場所",
+          "data_type": "api",
+          "request_url": "https://data.taipei/api/v1/dataset/52538305-ed23-490c-8f67-3efff2d777c3?scope=resourceAquire",
+          "data_path": "result.results",
+          "format_fields": {
+            "id": "_id",
+            "name": "場所名稱",
+            "area": "行政區",
+            "address": "場所地址",
+            "lat": "緯度",
+            "lng": "經度"
+          },
+          "service_infos": [
+            {
+              "title": "場所開放時間",
+              "value_field": "場所開放時間"
+            },
+            {
+              "title": "飲水台數",
+              "value_field": "飲水台數"
+            }
+          ]
         },
         {
           "id": "pb-3",
           "name": "公廁",
-          "icon": "",
+          "icon": "/public/images/icon_toilet.svg",
           "agency": "",
-          "type": "飲水機、公廁、哺集乳室、AED場所"
-        },
-        {
-          "id": "pb-4",
-          "name": "哺集乳室",
-          "icon": "",
-          "agency": "",
-          "type": "飲水機、公廁、哺集乳室、AED場所"
-        },
-        {
-          "id": "pb-5",
-          "name": "捐血站",
-          "icon": "",
-          "agency": "",
-          "type": "飲水機、公廁、哺集乳室、AED場所"
-        },
-        {
-          "id": "pb-6",
-          "name": "AED場所",
-          "icon": "",
-          "agency": "",
-          "type": "飲水機、公廁、哺集乳室、AED場所"
-        },
-        {
-          "id": "pb-7",
-          "name": "i郵箱",
-          "icon": "",
-          "type": "飲水機、公廁、哺集乳室、AED場所"
+          "type": "飲水機、公廁、哺集乳室、AED場所",
+          "data_type": "json",
+          "request_url": "/public/mock/find-place/public_toilet_taipei.json",
+          "data_path": "",
+          "format_fields": {
+            "id": "id",
+            "name": "name",
+            "area": "city",
+            "address": "address",
+            "lat": "latitude",
+            "lng": "longitude"
+          },
+          "service_infos": [
+            {
+              "title": "等級",
+              "value_field": "grade"
+            }
+          ]
         }
       ]
     }

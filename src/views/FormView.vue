@@ -8,6 +8,7 @@ import BaseButton from '@/components/atoms/BaseButton.vue';
 import FormPreview from '@/components/organisms/FormPreview.vue';
 import type { BasicForm } from '@/components/molecules/GeneralInfoForm.vue';
 import { useFormStore } from '@/stores/form';
+import { useUserStore } from '@/stores/user';
 import formJSON from '../../public/mock/form.json';
 
 const triggerValidate = ref(false);
@@ -17,6 +18,10 @@ const store = useFormStore();
 const { formFormat } = storeToRefs(store);
 
 formFormat.value = formJSON;
+
+const userStore = useUserStore();
+
+const { user } = storeToRefs(userStore);
 
 const basicForm = ref<{
   form: BasicForm;
@@ -54,7 +59,9 @@ watch(activeStep, () => {
   <div class="pb-8">
     <section class="bg-grey-50 px-4 pt-5 pb-4">
       <ServiceStep :activeStep="activeStep" />
-      <p v-show="activeStep === 1" class="font-bold mt-4">Hi XXX，請填寫以下申辦資料</p>
+      <p v-show="activeStep === 1" class="font-bold mt-4">
+        Hi {{ user?.username }}，請填寫以下申辦資料
+      </p>
     </section>
     <form v-show="activeStep === 1" @submit.stop="">
       <GeneralInfoForm

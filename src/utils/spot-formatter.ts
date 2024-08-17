@@ -1,7 +1,7 @@
 import type { Spot } from '@/views/SurroundingServiceView.vue';
 
 // 定義一個輔助函數來動態解析路徑
-const getNestedValue = (obj: any, path: string): any => {
+export const getNestedValue = (obj: any, path: string): any => {
   return path.split('.').reduce((acc, part) => {
     const match = part.match(/(\w+)\[(\d+)\]/);
     if (match) {
