@@ -47,7 +47,7 @@
           "agency": "台北市停車管理工程處",
           "type": "交通運輸、停車場、充電站",
           "data_type": "json",
-          "request_url": "/public/mock/find-place/TCMSV_alldesc.json",
+          "request_url": "./mock/find-place/TCMSV_alldesc.json",
           "data_path": "",
           "format_fields": {
             "id": "id",
@@ -76,7 +76,7 @@
         {
           "id": "pb-1",
           "name": "飲水機/提供飲水店家",
-          "icon": "/public/images/icon_drinking.svg",
+          "icon": "./images/icon_drinking.svg",
           "agency": "台北市政府環境保護局",
           "type": "飲水機、公廁、哺集乳室、AED場所",
           "data_type": "api",
@@ -104,11 +104,11 @@
         {
           "id": "pb-3",
           "name": "公廁",
-          "icon": "/public/images/icon_toilet.svg",
+          "icon": "./images/icon_toilet.svg",
           "agency": "",
           "type": "飲水機、公廁、哺集乳室、AED場所",
           "data_type": "json",
-          "request_url": "/public/mock/find-place/public_toilet_taipei.json",
+          "request_url": "./mock/find-place._toilet_taipei.json",
           "data_path": "",
           "format_fields": {
             "id": "id",

@@ -37,7 +37,7 @@ const onMapOpenClick = () => {
 };
 
 const onPurchaseClick = () => {
-  window.open(ticketItem.value?.purchase_link, '_blank', 'noopener,noreferrer');
+  useConnectionMessage('open_link', ticketItem.value?.purchase_link);
 };
 </script>
 
