@@ -299,8 +299,8 @@ const updateMarkers = async () => {
 
       const focusedIcon = {
         url: defaultFocusIconUrl, // 點擊後聚焦圖標的路徑
-        scaledSize: new google.maps.Size(100, 100), // 設置圖標的大小
-        anchor: new google.maps.Point(50, 100) // 設置圖標的錨點，使其中心對齊底部
+        scaledSize: new google.maps.Size(48, 69), // 設置圖標的大小
+        anchor: new google.maps.Point(24, 69) // 設置圖標的錨點，使其中心對齊底部
       };
 
       // 設置當前標記為聚焦圖標
