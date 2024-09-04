@@ -32,7 +32,8 @@ pnpm lint
 
 ### ```server.cjs``` for writing .env
 ### ```.env``` 
-create .env file at root and add your own google api key like .env.sample 
+- create .env file at root and add your own google api key like .env.sample
+- you can get your own api key at https://ai.google.dev/gemini-api/docs/api-key
 ### ```src/view/chatview.vue```
 ### ```src/view/youbike.ts```
 ### ```src/view/settingsview.vue```
