@@ -20,6 +20,11 @@ export interface MetroData {
     LocationTown: string;
     LocationTownCode: string;
 }
+
+export interface MetroDataWithDistance extends MetroData{
+    distance: number;
+}
+
 let userLatitude: number | null = null;
 let userLongitude: number | null = null;
 
@@ -54,11 +59,15 @@ function initGeolocation(): Promise<void> {
     });
 }
 
-export async function fetchMetroData(): Promise<(MetroData & { distanceFromUser: number | null })[]> {
+export async function fetchMetroData(): Promise<MetroDataWithDistance[]> {
     const url = 'https://tdx.transportdata.tw/api/basic/v2/Rail/Metro/Station/TRTC';
 
     try {
         await initGeolocation();
+
+        if (userLatitude === null || userLongitude === null) {
+            throw new Error("Unable to get user location");
+        }
 
         const response = await fetch(url);
 
@@ -68,19 +77,18 @@ export async function fetchMetroData(): Promise<(MetroData & { distanceFromUser:
 
         const data: MetroData[] = await response.json();
 
-        return data.map(station => ({
+        const dataWithDistance: MetroDataWithDistance[] = data.map(station => ({
             ...station,
-            distanceFromUser: userLatitude !== null && userLongitude !== null
-                ? getDistance(userLatitude, userLongitude, station.StationPosition.PositionLat, station.StationPosition.PositionLon)
-                : null
+            distance: getDistance(userLatitude!, userLongitude!, station.StationPosition.PositionLat, station.StationPosition.PositionLon)
         }));
+        return dataWithDistance
     } catch (error) {
         console.error('Failed to fetch or parse data:', error);
         return [];
     }
 }
 
-export async function getNearestMetroStation(): Promise<(MetroData & { distanceFromUser: number | null }) | null> {
+export async function getNearestMetroStation(): Promise<(MetroDataWithDistance) | null> {
     try {
         const stations = await fetchMetroData();
 
@@ -88,12 +96,9 @@ export async function getNearestMetroStation(): Promise<(MetroData & { distanceF
             return null;
         }
 
-        return stations.reduce((nearest, current) => {
-            if (nearest.distanceFromUser === null || current.distanceFromUser === null) {
-                return nearest;
-            }
-            return current.distanceFromUser < nearest.distanceFromUser ? current : nearest;
-        });
+        return stations.reduce((nearest, current) => 
+            current.distance< nearest.distance ? current : nearest
+        );
     } catch (error) {
         console.error('Error finding nearest returnable station:', error);
         return null;
