@@ -35,5 +35,6 @@ pnpm lint
 - create .env file at root and add your own google api key like .env.sample
 - you can get your own api key at https://ai.google.dev/gemini-api/docs/api-key
 ### ```src/view/chatview.vue```
-### ```src/view/youbike.ts```
+### ```src/view/youbike.ts, metro.ts, distance.ts```
 ### ```src/view/settingsview.vue```
+## Current problems: don't know how to modify user's api key (.env file)
