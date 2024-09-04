@@ -13,12 +13,17 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.17.1",
     "@googlemaps/js-api-loader": "^1.16.6",
     "@googlemaps/markerclusterer": "^2.5.3",
     "@headlessui/vue": "1.7.22",
     "@popperjs/core": "2.11.8",
     "@types/google.maps": "^3.55.10",
     "axios": "^1.7.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "marked": "^14.1.0",
     "pinia": "2.1.7",
     "v-calendar": "3.1.2",
     "vue": "3.4.21",

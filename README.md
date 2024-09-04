@@ -29,3 +29,9 @@ pnpm build
 ```sh
 pnpm lint
 ```
+
+### ```server.cjs``` for writing .env
+### ```.env```
+### ```src/view/chatview.vue```
+### ```src/view/youbike.ts```
+### ```src/view/settingsview.vue
