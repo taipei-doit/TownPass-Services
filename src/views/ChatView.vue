@@ -1,10 +1,21 @@
 <template>
     <div class="flex flex-col h-screen max-w-2xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
-        <h1 class="text-3xl font-bold p-4 text-tiffany-blue bg-white">Chat with AI</h1>
+        <header class="flex justify-between items-center bg-white p-4">
+            <h1 class="text-3xl font-bold text-tiffany-blue">人工智慧助理</h1>
+            <router-link to="/settings" class="text-[#71b2c2] hover:text-tiffany-blue">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+            </router-link>
+        </header>
         <div class="flex-grow overflow-y-auto p-4 space-y-4" ref="chatContainer">
             <div v-for="message in chatHistory" :key="message.id" class="p-3 rounded-lg"
                 :class="message.isUser ? 'bg-tiffany-blue text-white' : 'bg-gray-100'">
-                <p class="font-semibold">{{ message.isUser ? 'You' : 'AI' }}:</p>
+                <p class="font-semibold">{{ message.isUser ? '你' : '人工智慧助理' }}:</p>
                 <div v-if="message.isUser" class="mt-1">{{ message.content }}</div>
                 <div v-else v-html="renderMarkdown(message.content)" class="mt-1 prose prose-sm max-w-none"></div>
             </div>
@@ -12,11 +23,15 @@
         <div class="p-4 bg-white border-t border-gray-200">
             <div class="flex items-center">
                 <input v-model="userInput" @keyup.enter="sendMessage" :disabled="loading"
-                    class="flex-grow p-2 border border-tiffany-blue rounded-l-lg focus:outline-none focus:ring-2 focus:ring-tiffany-blue"
-                    placeholder="Type a message and press Enter" />
+                    class="flex-grow h-10 px-4 border border-tiffany-blue rounded-l-lg focus:outline-none focus:ring-2 focus:ring-tiffany-blue"
+                    placeholder="輸入你的問題" />
                 <button @click="sendMessage" :disabled="loading"
-                    class="bg-tiffany-blue text-white px-4 py-2 rounded-r-lg hover:bg-tiffany-blue-dark transition-colors">
-                    Send
+                    class="bg-tiffany-blue text-white h-10 px-3 py-2 rounded-r-lg hover:bg-tiffany-blue-dark transition-colors flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform rotate-90" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                            d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+                    </svg>
                 </button>
             </div>
             <p v-if="loading" class="mt-2 text-gray-600">Waiting for response...</p>
@@ -24,12 +39,13 @@
     </div>
 </template>
 
+
 <script setup lang="ts">
 import { ref, onMounted, nextTick } from 'vue';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { marked } from 'marked';
 import { getNearestRentableStation, getNearestReturnableStation, YouBikeDataWithDistance} from './youbike';
-import { getNearestMetroStation, MetroData } from './metro';
+import { getNearestMetroStation, MetroDataWithDistance } from './metro';
 import { getDistance } from './distance'
 // import { googleSearch } from './search';
 let userLatitude: number | null = null;
@@ -78,7 +94,7 @@ async function findReturnableStation(): Promise<YouBikeDataWithDistance | null> 
     }
 }
 
-async function findNearestMetroStation(): Promise<MetroData & { distanceFromUser: number | null } | null> {
+async function findNearestMetroStation(): Promise<MetroDataWithDistance> {
     try {
         return await getNearestMetroStation();
     } catch (error) {
