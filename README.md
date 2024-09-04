@@ -31,7 +31,8 @@ pnpm lint
 ```
 
 ### ```server.cjs``` for writing .env
-### ```.env```
+### ```.env``` 
+create .env file at root and add your own google api key like .env.sample 
 ### ```src/view/chatview.vue```
 ### ```src/view/youbike.ts```
-### ```src/view/settingsview.vue
+### ```src/view/settingsview.vue```
