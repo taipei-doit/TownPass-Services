@@ -47,7 +47,7 @@ import { marked } from 'marked';
 import { getNearestRentableStation, getNearestReturnableStation, YouBikeDataWithDistance} from './youbike';
 import { getNearestMetroStation, MetroDataWithDistance } from './metro';
 import { getDistance } from './distance'
-// import { googleSearch } from './search';
+import { googleSearch } from './search';
 let userLatitude: number | null = null;
 let userLongitude: number | null = null;
 
@@ -113,14 +113,14 @@ async function findDistance(lat1: number, lon1: number): Promise<any | null> {
     }
 }
 
-// async function searchGoogle(query: string): Promise<any | null> {
-//     try {
-//         return await googleSearch(query);
-//     } catch (error) {
-//         console.error("Error searching Google:", error);
-//         return null;
-//     }
-// }
+async function searchGoogle(query: string): Promise<any | null> {
+    try {
+        return await googleSearch(query);
+    } catch (error) {
+        console.error("Error searching Google:", error);
+        return null;
+    }
+}
 const functionDeclarations = [
     {
         name: "findRentableStation",
@@ -174,20 +174,20 @@ const functionDeclarations = [
     //         }
     //     }
     // },
-    // {
-    //     name: "searchGoogle",
-    //     description: "Tool to obtain real-time data and real-time data only",
-    //     parameters: {
-    //         type: "object",
-    //         properties: {
-    //             query: {
-    //                 type: "string",
-    //                 description: "The search query you want to use"
-    //             }
-    //         },
-    //         required: ["query"]
-    //     }
-    // }
+    {
+        name: "searchGoogle",
+        description: "Tool to obtain information you don't already know.",
+        parameters: {
+            type: "object",
+            properties: {
+                query: {
+                    type: "string",
+                    description: "The search query you want to use"
+                }
+            },
+            required: ["query"]
+        }
+    }
 ];
 
 const functions = {
@@ -195,11 +195,11 @@ const functions = {
     findReturnableStation,
     findNearestMetroStation,
     // findDistance
-    // searchGoogle
+    searchGoogle
 };
 
 const genAI = new GoogleGenerativeAI(apiKey);
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro", systemInstruction: "You are a smart assistant, you use tools when you can use them but you also answer questions on your own when tools are not available" });
+const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro", systemInstruction: "You are a smart assistant, you use tools when you can use them, you answer questions in traditional chinese" });
 const chat = model.startChat({ tools: [{ functionDeclarations }] });
 
 const renderMarkdown = (text: string) => {
