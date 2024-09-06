@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export async function googleSearch(query: string) {
     try {
-        const apiKey = import.meta.env.VITE_GOOGLE_API_KEY;
+        const apiKey = import.meta.env.VITE_GOOGLE_SEARCH_API_KEY;
         const cx = import.meta.env.VITE_GOOGLE_CX;
 
         if (!apiKey || !cx) {

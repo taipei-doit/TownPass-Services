@@ -48,6 +48,7 @@ import { getNearestRentableStation, getNearestReturnableStation, YouBikeDataWith
 import { getNearestMetroStation, MetroDataWithDistance } from './metro';
 import { getDistance } from './distance'
 import { googleSearch } from './search';
+import { getWeather } from './weather';
 let userLatitude: number | null = null;
 let userLongitude: number | null = null;
 
@@ -75,6 +76,37 @@ const userInput = ref('');
 const chatHistory = ref<Array<{ id: number; isUser: boolean; content: string }>>([]);
 const loading = ref(false);
 const chatContainer = ref<HTMLElement | null>(null);
+
+async function getWeather(): Promise<BotResponse> {
+    const url = 'https://opendata.cwa.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWA-EC987A54-DB8B-4E1A-AD8E-C775D2258D57&locationName=%E8%87%BA%E5%8C%97%E5%B8%82&elementName='; // Replace with actual weather API URL
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`Error fetching weather data: ${response.statusText}`);
+        }
+        const data = await response.json();
+        const weatherDetails = data.records.location.map((location) => {
+            const weatherElement = location.weatherElement.find(
+                (element) => element.elementName === 'Wx'
+            );
+            const forecastTimes = weatherElement?.time.map((time) => {
+                return `From ${time.startTime} to ${time.endTime}, the weather in ${location.locationName} is expected to be ${time.parameter.parameterName}.`;
+            });
+            return forecastTimes?.join('\n') || `No weather data available for ${location.locationName}.`;
+        });
+
+        return {
+            message: weatherDetails.join('\n'),
+            data: data
+        };
+    } catch (error) {
+        console.error("Error fetching weather:", error);
+        return {
+            message: "Sorry, I couldn't fetch the weather data."
+        };
+    }
+}
+
 
 async function findRentableStation(): Promise<YouBikeDataWithDistance | null> {
     try {
@@ -122,6 +154,19 @@ async function searchGoogle(query: string): Promise<any | null> {
     }
 }
 const functionDeclarations = [
+    {
+        name: "getWeather",
+        description: "Get the current weather forecast, including temperature and condition.",
+        parameters: {
+            type: "object", 
+            properties: {
+                dummy: {
+                    type: "string",
+                    description: "This parameter is not used but is required by the API."
+                }
+            }
+        }
+    },
     {
         name: "findRentableStation",
         description: "Get the nearest YouBike station's data where there are available bikes to rent, including the distance from the user.",
@@ -195,7 +240,8 @@ const functions = {
     findReturnableStation,
     findNearestMetroStation,
     // findDistance
-    searchGoogle
+    searchGoogle,
+    getWeather,
 };
 
 const genAI = new GoogleGenerativeAI(apiKey);
