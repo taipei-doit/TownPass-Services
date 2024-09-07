@@ -19,6 +19,7 @@
     "@popperjs/core": "2.11.8",
     "@types/google.maps": "^3.55.10",
     "axios": "^1.7.2",
+    "mapbox-gl": "^3.6.0",
     "pinia": "2.1.7",
     "v-calendar": "3.1.2",
     "vue": "3.4.21",

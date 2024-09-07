@@ -16,7 +16,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: SurroundingServiceView
     },
     {
       path: '/form/:id',

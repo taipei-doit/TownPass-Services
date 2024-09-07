@@ -11,6 +11,10 @@ import greenDotIconUrl from '/public/images/map/youbike/mappin-green.svg';
 import defaultFocusIconUrl from '/public/images/map/icon_mappin-garbagetruck-green-pressed.svg';
 import { mappingFormatter, getNestedValue } from '@/utils/spot-formatter';
 
+import Map from '../components/Map.vue';
+import 'mapbox-gl/dist/mapbox-gl.css';
+
+
 export interface Spot {
   id: string;
   /** 站點名稱 */
@@ -366,8 +370,9 @@ watch(searchSpotList, updateMarkers);
 </script>
 
 <template>
-  <div class="pb-8 h-screen">
+  <div class="h-screen">
     <div
+      class="flex flex-col h-full"
       :class="{ hidden: isExpandList || isExpandDetail, visible: !isExpandList && !isExpandDetail }"
     >
       <!-- 找地點搜尋框 -->
@@ -378,11 +383,15 @@ watch(searchSpotList, updateMarkers);
         />
       </div>
       <!-- 地圖 -->
-      <div class="relative flex-1" :class="{ hidden: isExpand, visible: !isExpand }">
-        <div class="google-map" id="map"></div>
-        <div v-if="isMapReady" class="gps" @click="getPositionClick">
-          <img src="@/assets/images/gps.png" width="20" alt="" />
-        </div>
+<!--      <div class="relative flex-1" :class="{ hidden: isExpand, visible: !isExpand }">-->
+<!--        <div class="google-map" id="map"></div>-->
+<!--        <div v-if="isMapReady" class="gps" @click="getPositionClick">-->
+<!--          <img src="@/assets/images/gps.png" width="20" alt="" />-->
+<!--        </div>-->
+<!--      </div>-->
+
+      <div class="flex flex-1" :class="{ hidden: isExpand, visible: !isExpand }">
+        <Map />
       </div>
       <!-- 選取的點 -->
       <div
@@ -466,10 +475,6 @@ watch(searchSpotList, updateMarkers);
 </template>
 
 <style lang="postcss" scoped>
-.google-map {
-  width: 100%;
-  height: 400px;
-}
 
 .marker {
   position: absolute;
