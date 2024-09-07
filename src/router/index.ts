@@ -9,6 +9,7 @@ import CouponListView from '../views/CouponListView.vue';
 import HotSpotView from '../views/HotSpotView.vue';
 import TicketDetail from '../views/TicketDetail.vue';
 import CouponDetail from '../views/CouponDetail.vue';
+import ParkingService from '@/views/ParkingService.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,7 +17,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: SurroundingServiceView
+      component: ParkingService
     },
     {
       path: '/form/:id',

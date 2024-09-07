@@ -11,7 +11,7 @@ import greenDotIconUrl from '/public/images/map/youbike/mappin-green.svg';
 import defaultFocusIconUrl from '/public/images/map/icon_mappin-garbagetruck-green-pressed.svg';
 import { mappingFormatter, getNestedValue } from '@/utils/spot-formatter';
 
-import Map from '../components/Map.vue';
+import Map from '../components/organisms/Map.vue';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 
