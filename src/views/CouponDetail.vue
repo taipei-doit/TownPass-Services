@@ -33,6 +33,8 @@ const activeTab = ref(0);
 const onBackButtonClick = () => {
   if (route.query.tab) {
     router.push({ name: 'coupon', query: { tab: route.query.tab } });
+  } else if (route.query.walletTab) {
+    router.push({ name: 'ticket-wallet', query: { walletTab: route.query.walletTab } });
   } else {
     router.back();
   }
@@ -40,7 +42,9 @@ const onBackButtonClick = () => {
 
 const isMapDialogOpen = ref(false);
 const isUseDialogOpen = ref(false);
+const isStoreDialogOpen = ref(false);
 const isExchangeDialogOpen = ref(false);
+const isStoreSuccessDialogOpen = ref(false);
 
 const handleLaunchMap = (event: { data: string }) => {
   const result: { name: string; data: boolean } = JSON.parse(event.data);
@@ -133,8 +137,16 @@ const onMapOpenClick = () => {
           </div>
         </template>
       </ServiceTabsView>
-      <div class="flex justify-center -mx-4 py-4 shadow-[0_0_6px_0_rgba(0,0,0,0.1)] mt-3">
-        <BaseButton class="w-3/4" @click="isUseDialogOpen = true">立即使用</BaseButton>
+      <div class="grid grid-cols-2 gap-x-2 -mx-4 p-4 shadow-[0_0_6px_0_rgba(0,0,0,0.1)] mt-3">
+        <BaseButton v-if="!route.query.needUse" @click="isStoreDialogOpen = true" :outline="true">
+          加入票夾
+        </BaseButton>
+        <BaseButton
+          @click="isUseDialogOpen = true"
+          :class="{ 'col-span-2': route.query.needUse === 'Y' }"
+        >
+          {{ route.query.needUse === 'Y' ? '兌換' : '立即使用' }}
+        </BaseButton>
       </div>
     </section>
     <BaseDialog
@@ -154,6 +166,25 @@ const onMapOpenClick = () => {
       positiveText="使用"
       negativeText="取消"
       @onPositiveClick="isExchangeDialogOpen = true"
+    />
+    <BaseDialog
+      v-model="isStoreDialogOpen"
+      title="領取本優惠?"
+      content=""
+      :isAlert="true"
+      positiveText="存入票夾"
+      negativeText="取消"
+      @onPositiveClick="isStoreSuccessDialogOpen = true"
+    />
+    <BaseDialog
+      v-model="isStoreSuccessDialogOpen"
+      title="領取成功，已存入我的票夾"
+      content=""
+      :is-check="true"
+      positiveText="使用優惠"
+      negativeText="更多優惠"
+      @onPositiveClick="router.push({ name: 'ticket-wallet', query: { walletTab: '2' } })"
+      @onNegativeClick="router.push({ name: 'coupon', query: { tab: '2' } })"
     />
     <BaseDialog
       v-model="isExchangeDialogOpen"

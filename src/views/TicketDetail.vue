@@ -35,10 +35,6 @@ useHandleConnectionData(handleLaunchMap);
 const onMapOpenClick = () => {
   useConnectionMessage('launch_map', ticketItem.value?.address.map);
 };
-
-const onPurchaseClick = () => {
-  useConnectionMessage('open_link', ticketItem.value?.purchase_link);
-};
 </script>
 
 <template>
@@ -169,7 +165,11 @@ const onPurchaseClick = () => {
       </div>
     </section>
     <div class="fixed bottom-0 left-0 w-screen p-4 bg-white flex justify-center">
-      <BaseButton :disabled="!ticketItem?.purchase_link" class="w-full" @click="onPurchaseClick">
+      <BaseButton
+        class="w-full"
+        link
+        :routeInfo="{ name: 'buy-ticket', params: { id: ticketItem?.id } }"
+      >
         立即購票
       </BaseButton>
     </div>

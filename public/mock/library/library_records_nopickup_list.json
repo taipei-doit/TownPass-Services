@@ -1,0 +1,37 @@
+{
+  "//": "圖書館服務-預約未取紀錄",
+  "data": [
+    {
+      "id": "lib-book-1",
+      "record_id": "lib-book-1lib-series-1",
+      "book_name": "我的第一本滑塊書 : 顏色配對",
+      "author": "Anton Poitier文 ; Maria Neradova圖",
+      "publisher": "新北市 :九童國際文化事業有限公司,[2016] ,©2016",
+      "publish_date": "2016/01/01",
+      "subject": "育兒 ; 親子遊戲",
+      "isbn": "9789864420780",
+      "thumbnail": "/images/library/IMG_2509.WEBP",
+      "click_count": 3450,
+      "call_number": "",
+      "selected_library": {
+        "id": "lib-2",
+        "name": "C21延吉",
+        "area": "大安區",
+        "address": "臺北市大安區延吉街236巷17號3-4樓",
+        "lat": 25.036840205171266,
+        "lng": 121.55728022540654
+      },
+      "status": "4",
+      "reservation_order": 1,
+      "extend_count": 0,
+      "reservation_date": "2024/08/27",
+      "processing_date": "2024/08/28",
+      "pickup_start_date": "2024/09/01",
+      "pickup_date": "",
+      "pickup_end_date": "2024/09/08",
+      "return_end_date": "",
+      "return_date": "",
+      "pickup_number": "080"
+    }
+  ]
+}

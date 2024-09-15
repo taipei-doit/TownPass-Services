@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import ServiceTabs from '@/components/molecules/ServiceTabs.vue';
-import type { TabsProps } from '@/components/molecules/ServiceTabs.vue';
+import type { TabsProps } from '@/interfaces/tab-props.interface';
 
 const props = withDefaults(defineProps<TabsProps>(), {
   tabList: () => [

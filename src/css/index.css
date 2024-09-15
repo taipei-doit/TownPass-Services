@@ -7,3 +7,12 @@
     font-family: '"PingFang TC", Roboto';
   }
 }
+
+@layer components {
+  .search-button {
+    @apply bg-primary-500 p-1 rounded-lg;
+    @apply h-11 w-11;
+    @apply flex justify-center items-center;
+    @apply -translate-x-1;
+  }
+}

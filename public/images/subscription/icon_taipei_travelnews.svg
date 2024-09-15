@@ -1,0 +1,32 @@
+<svg data-name="Group 4108" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+    <g data-name="Group 4106">
+        <g data-name="Group 4101">
+            <g data-name="Group 4097">
+                <path data-name="Path 4525" d="M612.412 597.8h-11.753a3.612 3.612 0 0 1-3.607-3.608v-18.273a3.612 3.612 0 0 1 3.607-3.608h11.753a3.612 3.612 0 0 1 3.608 3.608v18.275a3.612 3.612 0 0 1-3.608 3.606zm-11.753-23.915a2.033 2.033 0 0 0-2.031 2.032v18.275a2.034 2.034 0 0 0 2.031 2.033h11.753a2.035 2.035 0 0 0 2.033-2.033v-18.273a2.034 2.034 0 0 0-2.033-2.032z" transform="translate(-584.036 -558.496)" style="fill:#555"/>
+            </g>
+            <g data-name="Group 4098">
+                <path data-name="Path 4526" d="M606.536 595.384a.788.788 0 0 1-.788-.788v-19.079a.788.788 0 1 1 1.576 0V594.6a.788.788 0 0 1-.788.784z" transform="translate(-584.036 -558.496)" style="fill:#2eb6c7"/>
+            </g>
+            <g data-name="Group 4099">
+                <path data-name="Path 4527" d="M602.187 595.384a.787.787 0 0 1-.787-.788v-19.079a.787.787 0 1 1 1.575 0V594.6a.788.788 0 0 1-.788.784z" transform="translate(-584.036 -558.496)" style="fill:#2eb6c7"/>
+            </g>
+            <g data-name="Group 4100">
+                <path data-name="Path 4528" d="M610.884 595.384a.788.788 0 0 1-.788-.788v-19.079a.788.788 0 1 1 1.576 0V594.6a.788.788 0 0 1-.788.784z" transform="translate(-584.036 -558.496)" style="fill:#2eb6c7"/>
+            </g>
+        </g>
+        <g data-name="Group 4102">
+            <path data-name="Path 4529" d="M610.323 573.848h-7.573a.788.788 0 0 1-.788-.788v-8.594a3.612 3.612 0 0 1 3.608-3.608h1.93a3.612 3.612 0 0 1 3.607 3.608v8.594a.787.787 0 0 1-.784.788zm-6.785-1.575h6v-7.807a2.035 2.035 0 0 0-2.032-2.032h-1.936a2.034 2.034 0 0 0-2.032 2.032z" transform="translate(-584.036 -558.496)" style="fill:#555"/>
+        </g>
+        <g data-name="Group 4105">
+            <g data-name="Group 4103">
+                <path data-name="Path 4530" d="M603.275 601.134a2.418 2.418 0 1 1 2.418-2.418 2.42 2.42 0 0 1-2.418 2.418zm0-3.262a.843.843 0 1 0 .843.844.844.844 0 0 0-.843-.844z" transform="translate(-584.036 -558.496)" style="fill:#555"/>
+            </g>
+            <g data-name="Group 4104">
+                <path data-name="Path 4531" d="M609.8 601.134a2.418 2.418 0 1 1 2.418-2.418 2.42 2.42 0 0 1-2.418 2.418zm0-3.262a.843.843 0 1 0 .842.844.844.844 0 0 0-.842-.844z" transform="translate(-584.036 -558.496)" style="fill:#555"/>
+            </g>
+        </g>
+    </g>
+    <g data-name="Group 4107">
+        <path data-name="Rectangle 2424" style="fill:none" d="M0 0h45v45H0z"/>
+    </g>
+</svg>

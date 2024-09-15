@@ -15,7 +15,6 @@ const categoryList = computed(() => {
 const qnaList = ref<
   {
     name: string;
-    pageSize: number;
     list: {
       id: string;
       is_show_front_page: boolean;

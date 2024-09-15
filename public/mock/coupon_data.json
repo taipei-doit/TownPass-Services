@@ -61,8 +61,7 @@
           "週一休館"
         ],
         "spot_introduce": "臺北市立美術館成立於1983年，回應當時方興未艾的現在藝術運動而成立，是台灣首座公立美術館。",
-        "instructions": ["使用票券前有條件退票", "僅限購票當日使用"],
-        "purchase_link": "https://www.tfam.museum/Common/editor.aspx?id=230&ddlLang=zh-tw"
+        "instructions": ["使用票券前有條件退票", "僅限購票當日使用"]
       },
       {
         "id": "t-2",
@@ -89,8 +88,7 @@
           "已核銷後，恕不退票。"
         ],
         "spot_introduce": "位於捷運文湖線終點的臺北市立動物園，是一處結合自然保育、研究、教育與遊憩功能的社教機構，並於2012年4月取得環境教育設施及場所認證。",
-        "instructions": ["使用票券前有條件退票", "僅限購票當日使用"],
-        "purchase_link": "https://www.zoo.gov.taipei/cp.aspx?n=763493FD7ECCAA11&s=F3BC09EC36168CB6"
+        "instructions": ["使用票券前有條件退票", "僅限購票當日使用"]
       },
       {
         "id": "t-3",
@@ -112,8 +110,7 @@
           "僅限營運時間開放兌換使用，票券含入園門票及不限次數搭乘編號1號至13號大型遊樂設施。"
         ],
         "spot_introduce": "臺北市立兒童新樂園(以下簡稱兒童新樂園)前身為位於員山的臺北市立兒童育樂中心。",
-        "instructions": ["使用票券前有條件退票", "有效期/兌換其內皆可使用"],
-        "purchase_link": "https://www.tcap.taipei/cp.aspx?n=EE083F2DED91AB99"
+        "instructions": ["使用票券前有條件退票", "有效期/兌換其內皆可使用"]
       }
     ],
     "coupon_list": [

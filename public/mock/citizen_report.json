@@ -1,0 +1,99 @@
+{
+  "data": {
+    "hot_report": [
+      {
+        "id": "R-1",
+        "name": "教育事務",
+        "icon": "/images/report/report-transport.svg"
+      },
+      {
+        "id": "R-2",
+        "name": "公車、計程車、復康巴士問題",
+        "icon": "/images/report/report-building.svg"
+      },
+      {
+        "id": "R-3",
+        "name": "停車管理及收費問題",
+        "icon": "/images/report/report-transport.svg"
+      },
+      {
+        "id": "R-4",
+        "name": "建築物使用管理、違建查報及拆除",
+        "icon": "/images/report/report-building.svg"
+      },
+      {
+        "id": "R-11",
+        "name": "教育事務",
+        "icon": "/images/report/report-transport.svg"
+      },
+      {
+        "id": "R-12",
+        "name": "公車、計程車、復康巴士問題",
+        "icon": "/images/report/report-building.svg"
+      },
+      {
+        "id": "R-13",
+        "name": "停車管理及收費問題",
+        "icon": "/images/report/report-transport.svg"
+      },
+      {
+        "id": "R-14",
+        "name": "建築物使用管理、違建查報及拆除",
+        "icon": "/images/report/report-building.svg"
+      },
+      {
+        "id": "R-15",
+        "name": "教育事務",
+        "icon": "/images/report/report-transport.svg"
+      },
+      {
+        "id": "R-16",
+        "name": "公車、計程車、復康巴士問題",
+        "icon": "/images/report/report-building.svg"
+      }
+    ],
+    "all_report": [
+      {
+        "id": "CR-1",
+        "name": "垃圾、噪音、汙染及資源回收",
+        "icon": "/images/report/report-env.svg",
+        "service_requesting": [
+          {
+            "id": "R-5",
+            "name": "道路散落物或油漬處理"
+          },
+          {
+            "id": "R-6",
+            "name": "汙染舉發"
+          }
+        ],
+        "problem_reporting": [
+          {
+            "id": "R-7",
+            "name": "無牌廢棄車、廢物誤觸理(含醫療廢棄物)及資源回收"
+          },
+          {
+            "id": "R-8",
+            "name": "有牌廢棄車"
+          }
+        ]
+      },
+      {
+        "id": "CR-2",
+        "name": "文教、體育、資訊、觀光及媒體",
+        "icon": "/images/report/report-env.svg",
+        "service_requesting": [],
+        "problem_reporting": [
+          {
+            "id": "R-9",
+            "name": "文化事務(樹木保護、文化資產、表演藝術、文化場館、藝文推廣)"
+          },
+          {
+            "id": "R-1",
+            "name": "教育事務(校園、教師、幼兒園、圖書館、補教業)"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,844 @@
+{
+  "data": [
+    {
+      "id": "D-1",
+      "name": "民生、基礎設施災情",
+      "icon": "/images/disaster/icon-general-damage.svg",
+      "options": [
+        {
+          "id": "D-1-1",
+          "name": "電線(桿)或纜線受損",
+          "form_format": [
+            {
+              "type": "checkbox_group",
+              "label": "人員傷亡",
+              "field": "casualties",
+              "options": [
+                {
+                  "label": "傷亡",
+                  "value": "傷亡"
+                },
+                {
+                  "label": "受困",
+                  "value": "受困"
+                },
+                {
+                  "label": "失蹤",
+                  "value": "失蹤"
+                }
+              ]
+            },
+            {
+              "type": "checkbox_group",
+              "label": "影響交通",
+              "field": "traffic",
+              "options": [
+                {
+                  "label": "道路",
+                  "value": "道路"
+                },
+                {
+                  "label": "巷弄",
+                  "value": "巷弄"
+                },
+                {
+                  "label": "人行道",
+                  "value": "人行道"
+                }
+              ]
+            },
+            {
+              "type": "checkbox_group",
+              "label": "電纜線掉落",
+              "field": "cable_wire",
+              "options": [
+                {
+                  "label": "電纜掉落，恐有安全之虞",
+                  "value": "電纜掉落，恐有安全之虞"
+                },
+                {
+                  "label": "電力線掉落，恐有安全之虞",
+                  "value": "電力線掉落，恐有安全之虞"
+                },
+                {
+                  "label": "第四台電纜線掉落，恐有安全之虞",
+                  "value": "第四台電纜線掉落，恐有安全之虞"
+                },
+                {
+                  "label": "cctv電纜線掉落，恐有安全之虞",
+                  "value": "cctv電纜線掉落，恐有安全之虞"
+                },
+                {
+                  "label": "壓倒民宅",
+                  "value": "壓倒民宅"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "D-1-2",
+          "name": "變電所、電廠受災",
+          "form_format": [
+            {
+              "type": "checkbox_group",
+              "label": "人員傷亡",
+              "field": "casualties",
+              "options": [
+                {
+                  "label": "傷亡",
+                  "value": "傷亡"
+                },
+                {
+                  "label": "受困",
+                  "value": "受困"
+                },
+                {
+                  "label": "失蹤",
+                  "value": "失蹤"
+                }
+              ]
+            },
+            {
+              "type": "checkbox_group",
+              "label": "影響交通",
+              "field": "traffic",
+              "options": [
+                {
+                  "label": "道路",
+                  "value": "道路"
+                },
+                {
+                  "label": "巷弄",
+                  "value": "巷弄"
+                },
+                {
+                  "label": "人行道",
+                  "value": "人行道"
+                }
+              ]
+            },
+            {
+              "type": "checkbox_group",
+              "label": "附近全面停電",
+              "field": "power_failure",
+              "options": [
+                {
+                  "label": "變電箱",
+                  "value": "變電箱"
+                },
+                {
+                  "label": "變電所",
+                  "value": "變電所"
+                },
+                {
+                  "label": "電廠受災",
+                  "value": "電廠受災"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "D-1-3",
+          "name": "路燈故障",
+          "form_format": [
+            {
+              "type": "checkbox_group",
+              "label": "人員傷亡",
+              "field": "casualties",
+              "options": [
+                {
+                  "label": "傷亡",
+                  "value": "傷亡"
+                },
+                {
+                  "label": "受困",
+                  "value": "受困"
+                },
+                {
+                  "label": "失蹤",
+                  "value": "失蹤"
+                }
+              ]
+            },
+            {
+              "type": "checkbox_group",
+              "label": "影響交通",
+              "field": "traffic",
+              "options": [
+                {
+                  "label": "道路",
+                  "value": "道路"
+                },
+                {
+                  "label": "巷弄",
+                  "value": "巷弄"
+                },
+                {
+                  "label": "人行道",
+                  "value": "人行道"
+                }
+              ]
+            },
+            {
+              "type": "input",
+              "label": "路燈傾倒(傾倒盞)",
+              "field": "street_lamp_fall"
+            },
+            {
+              "type": "input",
+              "label": "路燈傾倒(失明盞)",
+              "field": "street_lamp_lost"
+            }
+          ]
+        },
+        {
+          "id": "D-1-4",
+          "name": "電力停電",
+          "form_format": [
+            {
+              "type": "checkbox_group",
+              "label": "人員傷亡",
+              "field": "casualties",
+              "options": [
+                {
+                  "label": "傷亡",
+                  "value": "傷亡"
+                },
+                {
+                  "label": "受困",
+                  "value": "受困"
+                },
+                {
+                  "label": "失蹤",
+                  "value": "失蹤"
+                }
+              ]
+            },
+            {
+              "type": "checkbox_group",
+              "label": "影響交通",
+              "field": "traffic",
+              "options": [
+                {
+                  "label": "道路",
+                  "value": "道路"
+                },
+                {
+                  "label": "巷弄",
+                  "value": "巷弄"
+                },
+                {
+                  "label": "人行道",
+                  "value": "人行道"
+                }
+              ]
+            },
+            {
+              "type": "checkbox_group",
+              "label": "停電範圍",
+              "field": "power_failure_range",
+              "options": [
+                {
+                  "label": "整棟大樓不亮",
+                  "value": "整棟大樓不亮"
+                },
+                {
+                  "label": "整排巷弄不亮",
+                  "value": "整排巷弄不亮"
+                },
+                {
+                  "label": "整區不亮",
+                  "value": "整區不亮"
+                },
+                {
+                  "label": "請提供發電機供維生系統運作",
+                  "value": "請提供發電機供維生系統運作"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D-2",
+      "name": "橋梁災情",
+      "icon": "/images/disaster/icon-bridge-damage.svg",
+      "options": [
+        {
+          "id": "D-2-1",
+          "name": "橋樑基礎沖刷",
+          "form_format": [
+            {
+              "type": "checkbox_group",
+              "label": "人員傷亡",
+              "field": "casualties",
+              "options": [
+                {
+                  "label": "傷亡",
+                  "value": "傷亡"
+                },
+                {
+                  "label": "受困",
+                  "value": "受困"
+                },
+                {
+                  "label": "失蹤",
+                  "value": "失蹤"
+                }
+              ]
+            },
+            {
+              "type": "input",
+              "label": "橋墩基礎沖刷有危險之虞影響通行(根)",
+              "field": "bridge_foundation_scouring"
+            },
+            {
+              "type": "input",
+              "label": "車子落水(輛)",
+              "field": "vehicle_submerged_in_water"
+            }
+          ]
+        },
+        {
+          "id": "D-2-2",
+          "name": "橋樑斷裂",
+          "form_format": [
+            {
+              "type": "checkbox_group",
+              "label": "人員傷亡",
+              "field": "casualties",
+              "options": [
+                {
+                  "label": "傷亡",
+                  "value": "傷亡"
+                },
+                {
+                  "label": "受困",
+                  "value": "受困"
+                },
+                {
+                  "label": "失蹤",
+                  "value": "失蹤"
+                }
+              ]
+            },
+            {
+              "type": "checkbox_group",
+              "label": "影響交通",
+              "field": "traffic",
+              "options": [
+                {
+                  "label": "道路",
+                  "value": "道路"
+                },
+                {
+                  "label": "巷弄",
+                  "value": "巷弄"
+                },
+                {
+                  "label": "人行道",
+                  "value": "人行道"
+                }
+              ]
+            },
+            {
+              "type": "input",
+              "label": "車子落水(輛)",
+              "field": "vehicle_submerged_in_water"
+            }
+          ]
+        },
+        {
+          "id": "D-2-3",
+          "name": "前述以外之橋梁災情",
+          "form_format": [
+            {
+              "type": "checkbox_group",
+              "label": "人員傷亡",
+              "field": "casualties",
+              "options": [
+                {
+                  "label": "傷亡",
+                  "value": "傷亡"
+                },
+                {
+                  "label": "受困",
+                  "value": "受困"
+                },
+                {
+                  "label": "失蹤",
+                  "value": "失蹤"
+                }
+              ]
+            },
+            {
+              "type": "checkbox_group",
+              "label": "影響交通",
+              "field": "traffic",
+              "options": [
+                {
+                  "label": "道路",
+                  "value": "道路"
+                },
+                {
+                  "label": "巷弄",
+                  "value": "巷弄"
+                },
+                {
+                  "label": "人行道",
+                  "value": "人行道"
+                }
+              ]
+            },
+            {
+              "type": "input",
+              "label": "河川水位即淹上橋面，有危險之虞(河川)",
+              "field": "river"
+            },
+            {
+              "type": "input",
+              "label": "河川水位即淹上橋面，有危險之虞(約差公尺)",
+              "field": "meter"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D-3",
+      "name": "土石災情",
+      "icon": "/images/disaster/icon-landslide.svg",
+      "options": [
+        {
+          "id": "D-3-1",
+          "name": "土石流",
+          "form_format": [
+            {
+              "type": "checkbox_group",
+              "label": "人員傷亡",
+              "field": "casualties",
+              "options": [
+                {
+                  "label": "傷亡",
+                  "value": "傷亡"
+                },
+                {
+                  "label": "受困",
+                  "value": "受困"
+                },
+                {
+                  "label": "失蹤",
+                  "value": "失蹤"
+                }
+              ]
+            },
+            {
+              "type": "checkbox_group",
+              "label": "影響交通",
+              "field": "traffic",
+              "options": [
+                {
+                  "label": "道路",
+                  "value": "道路"
+                },
+                {
+                  "label": "巷弄",
+                  "value": "巷弄"
+                },
+                {
+                  "label": "人行道",
+                  "value": "人行道"
+                }
+              ]
+            },
+            {
+              "type": "input",
+              "label": "土石流(範圍約多長)",
+              "field": "debris_flow_length"
+            },
+            {
+              "type": "input",
+              "label": "土石流(範圍約多寬)",
+              "field": "debris_flow_width"
+            },
+            {
+              "type": "input",
+              "label": "土石流(範圍約多深)",
+              "field": "debris_flow_height"
+            },
+            {
+              "type": "checkbox_group",
+              "label": "",
+              "field": "debris_flow_urgent",
+              "options": [
+                {
+                  "label": "多處房屋掩埋，情況危急",
+                  "value": "多處房屋掩埋，情況危急"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "D-3-2",
+          "name": "土石崩落",
+          "form_format": [
+            {
+              "type": "checkbox_group",
+              "label": "人員傷亡",
+              "field": "casualties",
+              "options": [
+                {
+                  "label": "傷亡",
+                  "value": "傷亡"
+                },
+                {
+                  "label": "受困",
+                  "value": "受困"
+                },
+                {
+                  "label": "失蹤",
+                  "value": "失蹤"
+                }
+              ]
+            },
+            {
+              "type": "checkbox_group",
+              "label": "影響交通",
+              "field": "traffic",
+              "options": [
+                {
+                  "label": "道路",
+                  "value": "道路"
+                },
+                {
+                  "label": "巷弄",
+                  "value": "巷弄"
+                },
+                {
+                  "label": "人行道",
+                  "value": "人行道"
+                }
+              ]
+            },
+            {
+              "type": "input",
+              "label": "土石流(範圍約多長)",
+              "field": "debris_flow_length"
+            },
+            {
+              "type": "input",
+              "label": "土石流(範圍約多寬)",
+              "field": "debris_flow_width"
+            },
+            {
+              "type": "input",
+              "label": "土石流(範圍約多深)",
+              "field": "debris_flow_height"
+            },
+            {
+              "type": "checkbox_group",
+              "label": "",
+              "field": "debris_flow_urgent",
+              "options": [
+                {
+                  "label": "多處房屋掩埋，情況危急",
+                  "value": "多處房屋掩埋，情況危急"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "D-3-3",
+          "name": "堰塞湖",
+          "form_format": [
+            {
+              "type": "checkbox_group",
+              "label": "人員傷亡",
+              "field": "casualties",
+              "options": [
+                {
+                  "label": "傷亡",
+                  "value": "傷亡"
+                },
+                {
+                  "label": "受困",
+                  "value": "受困"
+                },
+                {
+                  "label": "失蹤",
+                  "value": "失蹤"
+                }
+              ]
+            },
+            {
+              "type": "checkbox_group",
+              "label": "影響交通",
+              "field": "traffic",
+              "options": [
+                {
+                  "label": "道路",
+                  "value": "道路"
+                },
+                {
+                  "label": "巷弄",
+                  "value": "巷弄"
+                },
+                {
+                  "label": "人行道",
+                  "value": "人行道"
+                }
+              ]
+            },
+            {
+              "type": "input",
+              "label": "土石流(範圍約多長)",
+              "field": "debris_flow_length"
+            },
+            {
+              "type": "input",
+              "label": "土石流(範圍約多寬)",
+              "field": "debris_flow_width"
+            },
+            {
+              "type": "input",
+              "label": "土石流(範圍約多深)",
+              "field": "debris_flow_height"
+            },
+            {
+              "type": "input",
+              "label": "土石流(致使什麼河(溪)形成堰塞湖，情況危急)",
+              "field": "barrier_lake"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D-4",
+      "name": "火災",
+      "icon": "/images/disaster/icon-fire.svg",
+      "options": [
+        {
+          "id": "D-4-1",
+          "name": "建築物火災",
+          "form_format": [
+            {
+              "type": "checkbox_group",
+              "label": "人員傷亡",
+              "field": "casualties",
+              "options": [
+                {
+                  "label": "傷亡",
+                  "value": "傷亡"
+                },
+                {
+                  "label": "受困",
+                  "value": "受困"
+                },
+                {
+                  "label": "失蹤",
+                  "value": "失蹤"
+                }
+              ]
+            },
+            {
+              "type": "checkbox_group",
+              "label": "影響交通",
+              "field": "traffic",
+              "options": [
+                {
+                  "label": "道路",
+                  "value": "道路"
+                },
+                {
+                  "label": "巷弄",
+                  "value": "巷弄"
+                },
+                {
+                  "label": "人行道",
+                  "value": "人行道"
+                }
+              ]
+            },
+            {
+              "type": "input",
+              "label": "建築物狀況(建築物幾樓)",
+              "field": "floor"
+            }
+          ]
+        },
+        {
+          "id": "D-4-2",
+          "name": "危險物品火災",
+          "form_format": [
+            {
+              "type": "checkbox_group",
+              "label": "人員傷亡",
+              "field": "casualties",
+              "options": [
+                {
+                  "label": "傷亡",
+                  "value": "傷亡"
+                },
+                {
+                  "label": "受困",
+                  "value": "受困"
+                },
+                {
+                  "label": "失蹤",
+                  "value": "失蹤"
+                }
+              ]
+            },
+            {
+              "type": "checkbox_group",
+              "label": "影響交通",
+              "field": "traffic",
+              "options": [
+                {
+                  "label": "道路",
+                  "value": "道路"
+                },
+                {
+                  "label": "巷弄",
+                  "value": "巷弄"
+                },
+                {
+                  "label": "人行道",
+                  "value": "人行道"
+                }
+              ]
+            },
+            {
+              "type": "input",
+              "label": "火災狀況",
+              "field": "situation"
+            }
+          ]
+        },
+        {
+          "id": "D-4-3",
+          "name": "工廠火災",
+          "form_format": [
+            {
+              "type": "checkbox_group",
+              "label": "人員傷亡",
+              "field": "casualties",
+              "options": [
+                {
+                  "label": "傷亡",
+                  "value": "傷亡"
+                },
+                {
+                  "label": "受困",
+                  "value": "受困"
+                },
+                {
+                  "label": "失蹤",
+                  "value": "失蹤"
+                }
+              ]
+            },
+            {
+              "type": "checkbox_group",
+              "label": "影響交通",
+              "field": "traffic",
+              "options": [
+                {
+                  "label": "道路",
+                  "value": "道路"
+                },
+                {
+                  "label": "巷弄",
+                  "value": "巷弄"
+                },
+                {
+                  "label": "人行道",
+                  "value": "人行道"
+                }
+              ]
+            },
+            {
+              "type": "input",
+              "label": "火災狀況(工廠)",
+              "field": "factory"
+            },
+            {
+              "type": "input",
+              "label": "火災狀況(於幾樓)",
+              "field": "floor"
+            },
+            {
+              "type": "checkbox_group",
+              "label": "",
+              "field": "scale",
+              "options": [
+                {
+                  "label": "冒出大量濃煙",
+                  "value": "冒出大量濃煙"
+                },
+                {
+                  "label": "火舌竄出",
+                  "value": "火舌竄出"
+                },
+                {
+                  "label": "延燒至鄰棟建物",
+                  "value": "延燒至鄰棟建物"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "D-4-4",
+          "name": "其他(前述以外火災)",
+          "form_format": [
+            {
+              "type": "checkbox_group",
+              "label": "人員傷亡",
+              "field": "casualties",
+              "options": [
+                {
+                  "label": "傷亡",
+                  "value": "傷亡"
+                },
+                {
+                  "label": "受困",
+                  "value": "受困"
+                },
+                {
+                  "label": "失蹤",
+                  "value": "失蹤"
+                }
+              ]
+            },
+            {
+              "type": "checkbox_group",
+              "label": "影響交通",
+              "field": "traffic",
+              "options": [
+                {
+                  "label": "道路",
+                  "value": "道路"
+                },
+                {
+                  "label": "巷弄",
+                  "value": "巷弄"
+                },
+                {
+                  "label": "人行道",
+                  "value": "人行道"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

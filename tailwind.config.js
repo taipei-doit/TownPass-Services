@@ -19,6 +19,9 @@ export default {
       fontSize: {
         h1: '1.75rem'
       },
+      boxShadow: {
+        card: '0px 4px 12px 0px rgba(0, 0, 0, 0.1)'
+      },
       colors: {
         primary: {
           50: '#edf8fa',

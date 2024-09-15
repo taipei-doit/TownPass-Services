@@ -1,0 +1,32 @@
+<svg data-name="Group 4096" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+    <g data-name="Group 4085">
+        <path data-name="Rectangle 2423" style="fill:none" d="M0 0h45v45H0z"/>
+    </g>
+    <g data-name="Group 4095">
+        <g data-name="Group 4090">
+            <g data-name="Group 4086">
+                <path data-name="Path 4518" d="M484.4 629.384a4.354 4.354 0 1 1 4.355-4.355 4.36 4.36 0 0 1-4.355 4.355zm0-7.134a2.78 2.78 0 1 0 2.78 2.779 2.782 2.782 0 0 0-2.78-2.779z" transform="translate(-459.227 -602.522)" style="fill:#555"/>
+            </g>
+            <g data-name="Group 4087">
+                <path data-name="Path 4519" d="M475.039 629.384a4.354 4.354 0 1 1 4.355-4.355 4.36 4.36 0 0 1-4.355 4.355zm0-7.134a2.78 2.78 0 1 0 2.779 2.779 2.782 2.782 0 0 0-2.779-2.779z" transform="translate(-459.227 -602.522)" style="fill:#555"/>
+            </g>
+            <g data-name="Group 4088">
+                <path data-name="Path 4520" d="M493.766 629.384a4.354 4.354 0 1 1 4.355-4.355 4.36 4.36 0 0 1-4.355 4.355zm0-7.134a2.78 2.78 0 1 0 2.78 2.779 2.781 2.781 0 0 0-2.78-2.779z" transform="translate(-459.227 -602.522)" style="fill:#2eb6c7"/>
+            </g>
+            <g data-name="Group 4089">
+                <path data-name="Path 4521" d="M497.833 632.059h-26.861a2.966 2.966 0 0 1-2.963-2.962v-8.135a2.967 2.967 0 0 1 2.963-2.962h26.861a2.967 2.967 0 0 1 2.963 2.963v8.137a2.966 2.966 0 0 1-2.963 2.959zm-26.861-12.484a1.388 1.388 0 0 0-1.388 1.387v8.138a1.389 1.389 0 0 0 1.388 1.387h26.861a1.389 1.389 0 0 0 1.388-1.387v-8.135a1.389 1.389 0 0 0-1.388-1.387z" transform="translate(-459.227 -602.522)" style="fill:#555"/>
+            </g>
+        </g>
+        <g data-name="Group 4091">
+            <path data-name="Path 4522" d="M463.446 642.76a.787.787 0 0 1-.788-.787v-33.887a.788.788 0 1 1 1.576 0v33.887a.787.787 0 0 1-.788.787z" transform="translate(-459.227 -602.522)" style="fill:#555"/>
+        </g>
+        <g data-name="Group 4094">
+            <g data-name="Group 4092">
+                <path data-name="Path 4523" d="M468.087 623.567h-4.5a.788.788 0 1 1 0-1.576h4.5a.788.788 0 0 1 0 1.576z" transform="translate(-459.227 -602.522)" style="fill:#555"/>
+            </g>
+            <g data-name="Group 4093">
+                <path data-name="Path 4524" d="M468.087 628.067h-4.5a.788.788 0 1 1 0-1.576h4.5a.788.788 0 0 1 0 1.576z" transform="translate(-459.227 -602.522)" style="fill:#555"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg data-name="组件 442 – 121" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g data-name="组 13560">
+        <g data-name="组 13553">
+            <path data-name="路径 11615" d="M9.884 22.786H7.307l.485.485V6.279l-.485.485h2.577L9.4 6.279v16.993a.486.486 0 0 0 .971 0V6.279a.493.493 0 0 0-.485-.485H7.307a.493.493 0 0 0-.485.485v16.993a.493.493 0 0 0 .485.485h2.577a.486.486 0 0 0 0-.971z" transform="translate(-3.457 -2.563)" style="stroke-width:.5px;fill:#333;stroke:#333"/>
+        </g>
+        <g data-name="组 13554">
+            <path data-name="路径 11616" d="M37.261 11.311H34.89l.485.485V8.973l-.485.485h2.37l-.485-.485V11.8a.485.485 0 1 0 .97 0V8.973a.493.493 0 0 0-.485-.485h-2.37a.493.493 0 0 0-.485.485V11.8a.493.493 0 0 0 .485.485h2.37a.485.485 0 1 0 0-.97z" transform="translate(-17.432 -3.928)" style="stroke-width:.5px;fill:#333;stroke:#333"/>
+        </g>
+        <g data-name="组 13555">
+            <path data-name="路径 11617" d="M37.261 19.978H34.89l.485.485V17.64l-.485.485h2.37l-.485-.485v2.823a.485.485 0 1 0 .97 0V17.64a.493.493 0 0 0-.485-.485h-2.37a.493.493 0 0 0-.485.485v2.823a.493.493 0 0 0 .485.485h2.37a.485.485 0 0 0 0-.971z" transform="translate(-17.432 -7.319)" style="stroke-width:.5px;fill:#333;stroke:#333"/>
+        </g>
+        <g data-name="组 13556">
+            <path data-name="路径 11618" d="M37.261 28.645H34.89l.485.485v-2.823l-.485.485h2.37l-.485-.485v2.823a.485.485 0 1 0 .97 0v-2.823a.493.493 0 0 0-.485-.485h-2.37a.493.493 0 0 0-.485.485v2.823a.493.493 0 0 0 .485.485h2.37a.485.485 0 0 0 0-.971z" transform="translate(-17.432 -10.711)" style="stroke-width:.5px;fill:#333;stroke:#333"/>
+        </g>
+        <g data-name="组 13557">
+            <path data-name="路径 11619" d="M23.647 22.786h-10.84l.485.485V6.279l-.485.485h10.84l-.485-.485v16.993a.486.486 0 0 0 .971 0V6.279a.493.493 0 0 0-.485-.485H12.807a.493.493 0 0 0-.485.485v16.993a.493.493 0 0 0 .485.485h10.84a.486.486 0 0 0 0-.971z" transform="translate(-6.244 -2.563)" style="stroke-width:.5px;fill:#333;stroke:#333"/>
+        </g>
+        <g data-name="组 13558">
+            <path data-name="路径 11620" d="M17.824 14.015h5.906a.486.486 0 0 0 0-.972h-5.906a.486.486 0 0 0 0 .972z" transform="translate(-8.793 -5.661)" style="fill:#2eb0c1;stroke:#2eb0c1;stroke-width:.5px"/>
+        </g>
+        <g data-name="组 13559">
+            <path data-name="路径 11621" d="M17.824 18.348h5.906a.486.486 0 0 0 0-.972h-5.906a.486.486 0 0 0 0 .972z" transform="translate(-8.793 -7.129)" style="fill:#2eb0c1;stroke:#2eb0c1;stroke-width:.5px"/>
+        </g>
+    </g>
+    <path data-name="矩形 6912" style="fill:none" d="M0 0h24v24H0z"/>
+</svg>

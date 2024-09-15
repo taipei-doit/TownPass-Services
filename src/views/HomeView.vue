@@ -260,7 +260,7 @@ const activeRecord = computed(() =>
                     <p>申報日期：{{ item.date }}</p>
                   </div>
                   <div class="flex flex-col items-center">
-                    <img src="@/assets/images/review-icon.svg" />
+                    <img src="@/assets/images/rule-icon.svg" />
                     <span class="text-sm">{{ item.status }}</span>
                   </div>
                 </div>
@@ -275,13 +275,6 @@ const activeRecord = computed(() =>
 </template>
 
 <style lang="postcss">
-.search-button {
-  @apply bg-primary-500 p-1 rounded-lg;
-  @apply h-11 w-11;
-  @apply flex justify-center items-center;
-  @apply -translate-x-1;
-}
-
 .option-title {
   @apply relative;
   @apply before:content-[''];

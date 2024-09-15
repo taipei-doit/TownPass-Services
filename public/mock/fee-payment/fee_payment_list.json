@@ -1,0 +1,687 @@
+{
+  "//": "規費繳納-服務(包含熱門、其他)",
+  "data": [
+    {
+      "name": "規費",
+      "icon": "/images/payment/icon_regulatory_fee.svg",
+      "data": [
+        {
+          "id": "fee-1",
+          "name": "公司登記費",
+          "is_hot": false,
+          "search_type_list": [
+            {
+              "name": "輸入資料",
+              "type": "form",
+              "form_format": [
+                {
+                  "type": "input",
+                  "label": "手機號碼",
+                  "required": true,
+                  "field": "phone_number",
+                  "description": "範例：0910999999，不含分隔符號"
+                }
+              ],
+              "notice": [
+                "行動支付交易限額依各家業者規定為準。",
+                "欲使用 Linepay 繳費，請改用其 APP 查繳。",
+                "繳費相關問題，請洽詢商業處服務電話 (02)2720-8889 轉 6485、6491。"
+              ]
+            },
+            {
+              "name": "繳費編號",
+              "type": "form",
+              "form_format": [
+                {
+                  "type": "input",
+                  "label": "繳費編號",
+                  "required": true,
+                  "field": "payment_number",
+                  "description": "逾繳費期限，不提供查詢繳費功能"
+                }
+              ],
+              "notice": [
+                "行動支付交易限額依各家業者規定為準。",
+                "欲使用 Linepay 繳費，請改用其 APP 查繳。",
+                "繳費相關問題，請洽詢商業處服務電話 (02)2720-8889 轉 6485、6491。"
+              ]
+            },
+            {
+              "name": "掃描",
+              "type": "scan"
+            }
+          ]
+        },
+        {
+          "id": "fee-2",
+          "name": "商業登記費",
+          "is_hot": false,
+          "search_type_list": [
+            {
+              "name": "輸入資料",
+              "type": "form",
+              "form_format": [
+                {
+                  "type": "input",
+                  "label": "手機號碼",
+                  "required": true,
+                  "field": "phone_number",
+                  "description": "範例：0910999999，不含分隔符號"
+                }
+              ],
+              "notice": [
+                "行動支付交易限額依各家業者規定為準。",
+                "欲使用 Linepay 繳費，請改用其 APP 查繳。",
+                "繳費相關問題，請洽詢商業處服務電話 (02)2720-8889 轉 6485、6491。"
+              ]
+            },
+            {
+              "name": "繳費編號",
+              "type": "form",
+              "form_format": [
+                {
+                  "type": "input",
+                  "label": "繳費編號",
+                  "required": true,
+                  "field": "payment_number",
+                  "description": "逾繳費期限，不提供查詢繳費功能"
+                }
+              ],
+              "notice": [
+                "行動支付交易限額依各家業者規定為準。",
+                "欲使用 Linepay 繳費，請改用其 APP 查繳。",
+                "繳費相關問題，請洽詢商業處服務電話 (02)2720-8889 轉 6485、6491。"
+              ]
+            },
+            {
+              "name": "掃描",
+              "type": "scan"
+            }
+          ]
+        },
+        {
+          "id": "fee-3",
+          "name": "地政登記規費",
+          "is_hot": false,
+          "search_type_list": [
+            {
+              "name": "輸入資料",
+              "type": "form",
+              "form_format": [
+                {
+                  "type": "input",
+                  "label": "統編",
+                  "required": true,
+                  "field": "tax_id",
+                  "description": ""
+                },
+                {
+                  "type": "select",
+                  "label": "地政事務所",
+                  "required": true,
+                  "field": "office",
+                  "description": "",
+                  "default_option": "請選擇地政事務所",
+                  "options": [
+                    {
+                      "label": "古亭地政事務所",
+                      "value": "古亭地政事務所"
+                    },
+                    {
+                      "label": "建成地政事務所",
+                      "value": "建成地政事務所"
+                    },
+                    {
+                      "label": "中山地政事務所",
+                      "value": "中山地政事務所"
+                    }
+                  ]
+                }
+              ],
+              "notice": [
+                "行動支付交易限額依各家業者規定為準。",
+                "費用相關問題，請洽各區地政事務所聯絡電話",
+                "臺北市古亭地政事務所，(02)2935-5369。",
+                "臺北市建成地政事務所，(02)2306-2122。",
+                "臺北市中山地政事務所，(02)2502-2881。"
+              ]
+            },
+            {
+              "name": "繳費編號",
+              "type": "form",
+              "form_format": [
+                {
+                  "type": "input",
+                  "label": "繳費編號",
+                  "required": true,
+                  "field": "payment_number",
+                  "description": "逾繳費期限，不提供查詢繳費功能"
+                }
+              ],
+              "notice": [
+                "行動支付交易限額依各家業者規定為準。",
+                "費用相關問題，請洽各區地政事務所聯絡電話",
+                "臺北市古亭地政事務所，(02)2935-5369。",
+                "臺北市建成地政事務所，(02)2306-2122。",
+                "臺北市中山地政事務所，(02)2502-2881。"
+              ]
+            },
+            {
+              "name": "掃描",
+              "type": "scan"
+            }
+          ]
+        },
+        {
+          "id": "fee-4",
+          "name": "產業局資料使用費",
+          "is_hot": false,
+          "search_type_list": [
+            {
+              "name": "繳費編號",
+              "type": "form",
+              "form_format": [
+                {
+                  "type": "input",
+                  "label": "繳費編號",
+                  "required": true,
+                  "field": "payment_number",
+                  "description": "逾繳費期限，不提供查詢繳費功能"
+                }
+              ],
+              "notice": []
+            },
+            {
+              "name": "掃描",
+              "type": "scan"
+            }
+          ]
+        },
+        {
+          "id": "fee-5",
+          "name": "停車費",
+          "is_hot": true,
+          "search_type_list": [
+            {
+              "name": "輸入資料",
+              "type": "form",
+              "form_format": [
+                {
+                  "type": "radio_group_input",
+                  "label": "請選擇車種",
+                  "required": true,
+                  "field": "vehicle_type",
+                  "options": [
+                    {
+                      "label": "汽車",
+                      "value": "car",
+                      "form_format": [
+                        {
+                          "type": "input",
+                          "label": "",
+                          "required": true,
+                          "field": "plate_number",
+                          "description": "範例：AAA-8888(含分隔符號)"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "機車",
+                      "value": "motorcycle",
+                      "form_format": [
+                        {
+                          "type": "input",
+                          "label": "",
+                          "required": true,
+                          "field": "plate_number",
+                          "description": "範例：AAA-8888(含分隔符號)"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "notice": [
+                "欲使用 Linepay、發票存摺、蝦皮購物、遠通電收繳費，請改用其 APP 查繳。",
+                "每日早上5:15~6:15為停管處系統資料更新時間，此期間暫不提供查繳服務。",
+                "路邊停車費九五折優惠僅限於繳納一般停車單，平信、催繳、追繳單號將無法享有此項優惠。",
+                "為推廣智慧停車，智慧停車收費區停車錢10分鐘免費，",
+                "停車費代繳金額，以停管處回覆之即時結果為準。",
+                "若已在超商繳費、其他繳費平台或與銀行約定自動扣繳，請勿重複繳費。",
+                "其他查詢或退費相關事宜，請洽北市停管處02-2726-9600(服務時間週一至週五08:30~17:30)辦理。",
+                "重型機車車種請選擇機車。"
+              ]
+            },
+            {
+              "name": "繳費編號",
+              "type": "form",
+              "form_format": [
+                {
+                  "type": "input",
+                  "label": "繳費編號",
+                  "required": true,
+                  "field": "payment_number",
+                  "description": "逾繳費期限，不提供查詢繳費功能"
+                }
+              ],
+              "notice": [
+                "欲使用 Linepay、發票存摺、蝦皮購物、遠通電收繳費，請改用其 APP 查繳。",
+                "每日早上5:15~6:15為停管處系統資料更新時間，此期間暫不提供查繳服務。",
+                "路邊停車費九五折優惠僅限於繳納一般停車單，平信、催繳、追繳單號將無法享有此項優惠。",
+                "為推廣智慧停車，智慧停車收費區停車錢10分鐘免費，",
+                "停車費代繳金額，以停管處回覆之即時結果為準。",
+                "若已在超商繳費、其他繳費平台或與銀行約定自動扣繳，請勿重複繳費。",
+                "其他查詢或退費相關事宜，請洽北市停管處02-2726-9600(服務時間週一至週五08:30~17:30)辦理。",
+                "重型機車車種請選擇機車。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fee-6",
+          "name": "水費",
+          "is_hot": true,
+          "search_type_list": [
+            {
+              "name": "輸入資料",
+              "type": "form",
+              "form_format": [
+                {
+                  "type": "input",
+                  "label": "水號",
+                  "required": true,
+                  "field": "water_number",
+                  "description": "大區為1碼，中區為2碼，戶號為6碼，檢核號為1碼"
+                }
+              ],
+              "notice": [
+                "若已在<span style='color:red'>超商</span>繳費、其他繳費平台或與銀行約定自動扣繳，請勿重複繳費。",
+                "即日起<span style='color:red'>電子帳單</span>用戶，以<span style='color:red'>行動支付繳費(含本網站信用卡支付)</span>，<span style='color:red'>下期水費減收10元(不限次數)</span>。<span style='color: #0066CC;text-decoration: underline;'>立即申辦享優惠！</span>"
+              ]
+            },
+            {
+              "name": "掃描",
+              "type": "scan"
+            }
+          ]
+        },
+        {
+          "id": "fee-7",
+          "name": "學雜費",
+          "is_hot": true,
+          "search_type_list": [
+            {
+              "name": "繳費編號",
+              "type": "form",
+              "form_format": [
+                {
+                  "type": "input",
+                  "label": "繳費編號",
+                  "required": true,
+                  "field": "payment_number",
+                  "description": "逾繳費期限，不提供查詢繳費功能"
+                }
+              ],
+              "notice": [
+                "逾期請至學校辦理繳納，並依校規辦理。"
+              ]
+            },
+            {
+              "name": "掃描",
+              "type": "scan"
+            }
+          ]
+        },
+        {
+          "id": "fee-8",
+          "name": "國/社宅租金維管費",
+          "is_hot": true,
+          "search_type_list": [
+            {
+              "name": "輸入資料",
+              "type": "form",
+              "form_format": [
+                {
+                  "type": "input",
+                  "label": "身分證字號",
+                  "required": true,
+                  "field": "tax_id",
+                  "description": ""
+                }
+              ],
+              "notice": [
+                "<span style='color: red;'>有關行天宮、敦煌、萬隆、新興、大龍峒、景文、金龍、洲美、大橋頭等社宅已委由臺北市住宅及都市更新中心管理，繳費請至「社宅租金及管理費-住都中心」項目操作。</span>",
+                "綁定身分證字號，即可快速查詢代繳租金與維管費。"
+              ]
+            },
+            {
+              "name": "單據號碼",
+              "type": "form",
+              "form_format": [
+                {
+                  "type": "input",
+                  "label": "單據號碼",
+                  "required": true,
+                  "field": "payment_number",
+                  "description": "逾繳費期限，不提供查詢繳費功能"
+                }
+              ],
+              "notice": [
+                "<span style='color: red;'>有關行天宮、敦煌、萬隆、新興、大龍峒、景文、金龍、洲美、大橋頭等社宅已委由臺北市住宅及都市更新中心管理，繳費請至「社宅租金及管理費-住都中心」項目操作。</span>",
+                "綁定身分證字號，即可快速查詢代繳租金與維管費。"
+              ]
+            },
+            {
+              "name": "掃描",
+              "type": "scan"
+            }
+          ]
+        },
+        {
+          "id": "fee-9",
+          "name": "聯合醫院醫療費",
+          "is_hot": true,
+          "search_type_list": [
+            {
+              "name": "輸入資料",
+              "type": "form",
+              "form_format": [
+                {
+                  "type": "input",
+                  "label": "證件號碼",
+                  "required": true,
+                  "field": "tax_id",
+                  "description": ""
+                },
+                {
+                  "type": "date_picker",
+                  "label": "出生日期",
+                  "required": true,
+                  "field": "date",
+                  "description": "範例：1912-01-01(含分隔符號)"
+                },
+                {
+                  "type": "select",
+                  "label": "院區",
+                  "required": true,
+                  "field": "office",
+                  "description": "",
+                  "default_option": "請選擇院區",
+                  "options": [
+                    {
+                      "label": "所有院區",
+                      "value": "所有院區"
+                    },
+                    {
+                      "label": "中興",
+                      "value": "中興"
+                    },
+                    {
+                      "label": "仁愛",
+                      "value": "仁愛"
+                    },
+                    {
+                      "label": "和平",
+                      "value": "和平"
+                    },
+                    {
+                      "label": "婦幼",
+                      "value": "婦幼"
+                    }
+                  ]
+                }
+              ],
+              "notice": [
+                "欲使用 Linepay 繳費，請改用其 APP 查繳。"
+              ]
+            },
+            {
+              "name": "繳費編號",
+              "type": "form",
+              "form_format": [
+                {
+                  "type": "input",
+                  "label": "繳費編號",
+                  "required": true,
+                  "field": "payment_number",
+                  "description": "逾繳費期限，不提供查詢繳費功能"
+                }
+              ],
+              "notice": [
+                "欲使用 Linepay 繳費，請改用其 APP 查繳。"
+              ]
+            },
+            {
+              "name": "掃描",
+              "type": "scan"
+            }
+          ]
+        },
+        {
+          "id": "fee-10",
+          "name": "平價住宅維護費",
+          "is_hot": false,
+          "search_type_list": [
+            {
+              "name": "輸入資料",
+              "type": "form",
+              "form_format": [
+                {
+                  "type": "input",
+                  "label": "身分證字號",
+                  "required": true,
+                  "field": "tax_id",
+                  "description": ""
+                }
+              ],
+              "notice": [
+                "欲使用 Linepay 繳費，請改用其 APP 查繳。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fee-11",
+          "name": "公訓處自費課程",
+          "is_hot": true,
+          "search_type_list": [
+            {
+              "name": "繳費編號",
+              "type": "form",
+              "form_format": [
+                {
+                  "type": "input",
+                  "label": "繳費編號",
+                  "required": true,
+                  "field": "payment_number",
+                  "description": "逾繳費期限，不提供查詢繳費功能"
+                }
+              ],
+              "notice": [
+                "逾繳費期限，請先洽班期承辦人員確認能否受理繳費。",
+                "繳費後第 10 個工作天，可登入臺北e大在在[課程報名狀況]頁面檢視繳費審核結果。",
+                "如尚有其他問題，請洽臺北e大客服專線(02)2932-0212分機341"
+              ]
+            },
+            {
+              "name": "掃描",
+              "type": "scan"
+            }
+          ]
+        },
+        {
+          "id": "fee-12",
+          "name": "快閃購繳款",
+          "is_hot": false,
+          "search_type_list": [
+            {
+              "name": "輸入資料",
+              "type": "form",
+              "form_format": [
+                {
+                  "type": "input",
+                  "label": "快閃購帳號",
+                  "required": true,
+                  "field": "account",
+                  "description": ""
+                },
+                {
+                  "type": "input",
+                  "label": "手機號碼",
+                  "required": true,
+                  "field": "phone_number",
+                  "description": ""
+                }
+              ],
+              "notice": []
+            },
+            {
+              "name": "繳費編號",
+              "type": "form",
+              "form_format": [
+                {
+                  "type": "input",
+                  "label": "繳費編號",
+                  "required": true,
+                  "field": "payment_number",
+                  "description": "逾繳費期限，不提供查詢繳費功能"
+                }
+              ],
+              "notice": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "稅費",
+      "icon": "/images/payment/icon_tax_payment.svg",
+      "data": [
+        {
+          "id": "tax-1",
+          "name": "地方稅",
+          "is_hot": false,
+          "search_type_list": [
+            {
+              "name": "掃描",
+              "type": "scan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "罰鍰",
+      "icon": "/images/payment/icon_bill.svg",
+      "data": [
+        {
+          "id": "fine-1",
+          "name": "地政罰鍰",
+          "is_hot": false,
+          "search_type_list": [
+            {
+              "name": "輸入資料",
+              "type": "form",
+              "form_format": [
+                {
+                  "type": "input",
+                  "label": "統編",
+                  "required": true,
+                  "field": "tax_id",
+                  "description": ""
+                },
+                {
+                  "type": "select",
+                  "label": "地政事務所",
+                  "required": true,
+                  "field": "office",
+                  "description": "",
+                  "default_option": "請選擇地政事務所",
+                  "options": [
+                    {
+                      "label": "古亭地政事務所",
+                      "value": "古亭地政事務所"
+                    },
+                    {
+                      "label": "建成地政事務所",
+                      "value": "建成地政事務所"
+                    },
+                    {
+                      "label": "中山地政事務所",
+                      "value": "中山地政事務所"
+                    }
+                  ]
+                }
+              ],
+              "notice": [
+                "行動支付交易限額依各家業者規定為準。",
+                "費用相關問題，請洽各區地政事務所聯絡電話",
+                "臺北市古亭地政事務所，(02)2935-5369。",
+                "臺北市建成地政事務所，(02)2306-2122。",
+                "臺北市中山地政事務所，(02)2502-2881。"
+              ]
+            },
+            {
+              "name": "繳費編號",
+              "type": "form",
+              "form_format": [
+                {
+                  "type": "input",
+                  "label": "繳費編號",
+                  "required": true,
+                  "field": "payment_number",
+                  "description": "逾繳費期限，不提供查詢繳費功能"
+                }
+              ],
+              "notice": [
+                "行動支付交易限額依各家業者規定為準。",
+                "費用相關問題，請洽各區地政事務所聯絡電話",
+                "臺北市古亭地政事務所，(02)2935-5369。",
+                "臺北市建成地政事務所，(02)2306-2122。",
+                "臺北市中山地政事務所，(02)2502-2881。"
+              ]
+            },
+            {
+              "name": "掃描",
+              "type": "scan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "金門縣政府",
+      "icon": "/images/payment/icon_bill.svg",
+      "data": [
+        {
+          "id": "kinmen-fee-1",
+          "name": "金門縣水費",
+          "is_hot": true,
+          "search_type_list": [
+            {
+              "name": "輸入資料",
+              "type": "form",
+              "form_format": [
+                {
+                  "type": "input",
+                  "label": "水號",
+                  "required": true,
+                  "field": "water_number",
+                  "description": "大區為1碼，中區為2碼，戶號為6碼，檢核號為1碼"
+                }
+              ],
+              "notice": [
+                "若已在<span style='color:red'>超商</span>繳費、其他繳費平台或與銀行約定自動扣繳，請勿重複繳費。",
+                "即日起<span style='color:red'>電子帳單</span>用戶，以<span style='color:red'>行動支付繳費(含本網站信用卡支付)</span>，<span style='color:red'>下期水費減收10元(不限次數)</span>。<span style='color: #0066CC;text-decoration: underline;'>立即申辦享優惠！</span>"
+              ]
+            },
+            {
+              "name": "掃描",
+              "type": "scan"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

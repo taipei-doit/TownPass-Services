@@ -1,0 +1,19 @@
+<svg data-name="组件 443 – 145" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g data-name="组 13551" transform="translate(1.239 5.014)">
+        <g data-name="组 13548">
+            <path data-name="路径 11612" d="M16.261 29.777h-3.212l.493.493v-5.876l-.493.493h3.212l-.493-.493v5.876a.493.493 0 0 0 .986 0v-5.876a.5.5 0 0 0-.493-.493h-3.212a.5.5 0 0 0-.493.493v5.876a.5.5 0 0 0 .493.493h3.212a.493.493 0 0 0 0-.986z" transform="translate(-7.604 -17.137)" style="fill:#333;stroke:#333;stroke-width:.5px"/>
+        </g>
+        <g data-name="组 13549">
+            <path data-name="路径 11613" d="M23.231 10.183H4.549a.5.5 0 0 0-.493.493v2.943a.5.5 0 0 0 .493.493h1.267l-.493-.493v9.7a.5.5 0 0 0 .493.493h16.148a.5.5 0 0 0 .493-.493v-9.7l-.493.493h1.267a.5.5 0 0 0 .493-.493v-2.943a.493.493 0 0 0-.986 0v2.943l.493-.493h-1.267a.5.5 0 0 0-.493.493v9.7l.493-.493H5.816l.493.493v-9.7a.5.5 0 0 0-.493-.493H4.549l.493.493v-2.943l-.493.493h18.682a.493.493 0 0 0 0-.986z" transform="translate(-3.295 -10.183)" style="fill:#333;stroke:#333;stroke-width:.5px"/>
+        </g>
+        <g data-name="组 13550">
+            <path data-name="路径 11614" d="M2.989 36.8h20.237a.493.493 0 0 0 0-.986H2.989a.493.493 0 0 0 0 .986z" transform="translate(-2.513 -23.177)" style="fill:#333;stroke:#333;stroke-width:.5px"/>
+        </g>
+        <rect data-name="矩形 6906" width="1.896" height="1.896" rx=".948" transform="translate(10.892 3.93)" style="fill:#2eb0c1"/>
+        <rect data-name="矩形 6907" width="1.896" height="1.896" rx=".948" transform="translate(6.248 3.93)" style="fill:#2eb0c1"/>
+        <rect data-name="矩形 6908" width="1.896" height="1.896" rx=".948" transform="translate(14.317 3.93)" style="fill:#2eb0c1"/>
+        <rect data-name="矩形 6909" width="1.896" height="1.896" rx=".948" transform="translate(10.892 6.584)" style="fill:#2eb0c1"/>
+        <rect data-name="矩形 6910" width="1.896" height="1.896" rx=".948" transform="translate(14.317 6.584)" style="fill:#2eb0c1"/>
+    </g>
+    <path data-name="矩形 6911" style="fill:none" d="M0 0h24v24H0z"/>
+</svg>

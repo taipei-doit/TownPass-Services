@@ -1,0 +1,588 @@
+{
+  "//": "圖書館服務-書籍清單",
+  "data": [
+    {
+      "id": "lib-book-1",
+      "book_name": "我的第一本滑塊書 : 顏色配對",
+      "author": "Anton Poitier文 ; Maria Neradova圖",
+      "publisher": "新北市 :九童國際文化事業有限公司,[2016] ,©2016",
+      "publish_date": "2016/01/01",
+      "subject": "育兒 ; 親子遊戲",
+      "isbn": "9789864420780",
+      "thumbnail": "/images/library/IMG_2509.WEBP",
+      "click_count": 3450,
+      "call_number": "",
+      "series": [
+        {
+          "book_id": "lib-book-1",
+          "id": "lib-series-1",
+          "series＿name": "V. 1",
+          "waiting_people": 38,
+          "is_reservation": true,
+          "is_hot": false
+        },
+        {
+          "book_id": "lib-book-1",
+          "id": "lib-series-2",
+          "series＿name": "V. 2",
+          "waiting_people": 0,
+          "is_reservation": true,
+          "is_hot": false
+        },
+        {
+          "book_id": "lib-book-1",
+          "id": "lib-series-3",
+          "series＿name": "V. 3",
+          "waiting_people": 0,
+          "is_reservation": true,
+          "is_hot": false
+        },
+        {
+          "book_id": "lib-book-1",
+          "id": "lib-series-4",
+          "series＿name": "V. 4",
+          "waiting_people": 0,
+          "is_reservation": true,
+          "is_hot": false
+        },
+        {
+          "book_id": "lib-book-1",
+          "id": "lib-series-5",
+          "series＿name": "V. 5",
+          "waiting_people": 0,
+          "is_reservation": true,
+          "is_hot": true
+        }
+      ],
+      "libraries": [
+        {
+          "id": "lib-1",
+          "name": "BFB臺北市政府借書站(取書期限3日，無法申請請預約延長2日)",
+          "area": "信義區",
+          "address": "臺北市信義區市府路1號",
+          "phone": "02-27552823轉2104",
+          "lat": "25.037491",
+          "lng": "121.564088",
+          "service_infos": [
+            {
+              "title": "依臺北市政府開放時間"
+            }
+          ]
+        },
+        {
+          "id": "lib-2",
+          "name": "C21延吉",
+          "area": "大安區",
+          "address": "臺北市大安區延吉街236巷17號3-4樓",
+          "phone": "0227081964",
+          "lat": "25.036840205171266",
+          "lng": "121.55728022540654",
+          "service_infos": [
+            {
+              "title": "週二至週六",
+              "value": "8:30~21:00"
+            },
+            {
+              "title": "週日、週一",
+              "value": "9:00~17:00"
+            }
+          ]
+        },
+        {
+          "id": "lib-3",
+          "name": "B12三興",
+          "area": "信義區",
+          "address": "臺北市信義區吳興街156巷6號4、5樓",
+          "phone": "0287321063",
+          "lat": "25.029304444447725",
+          "lng": "121.56162172030848",
+          "service_infos": [
+            {
+              "title": "週二至週六",
+              "value": "8:30~21:00"
+            },
+            {
+              "title": "週日、週一",
+              "value": "9:00~17:00"
+            }
+          ]
+        },
+        {
+          "id": "lib-4",
+          "name": "B11永春",
+          "area": "信義區",
+          "address": "臺北市信義區松山路294號3樓",
+          "phone": "0227609730",
+          "lat": "25.043701651787917",
+          "lng": "121.57899765603491",
+          "service_infos": [
+            {
+              "title": "週二至週六",
+              "value": "8:30~21:00"
+            },
+            {
+              "title": "週日、週一",
+              "value": "9:00~17:00"
+            }
+          ]
+        },
+        {
+          "id": "lib-5",
+          "name": "CFB 信義安和借書站",
+          "area": "大安區",
+          "address": "臺北市大安區信義路四段212-1號號 B1",
+          "phone": "27552823-2104",
+          "lat": "25.03416873423933",
+          "lng": "121.55257274232868",
+          "service_infos": [
+            {
+              "title": "每日上午6時至晚間12時(依捷運站時間開放)"
+            }
+          ]
+        },
+        {
+          "id": "lib-6",
+          "name": "B13六合",
+          "area": "信義區",
+          "address": "臺北市信義區松仁路240巷19號3-5樓",
+          "phone": "0227292485",
+          "lat": "25.025116176981246",
+          "lng": "121.57040911000693",
+          "service_infos": [
+            {
+              "title": "週二至週六",
+              "value": "8:30~21:00"
+            },
+            {
+              "title": "週日、週一",
+              "value": "9:00~17:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lib-book-2",
+      "book_name": "說給兒童的臺灣歷史",
+      "author": "[天衛文化圖書製作] ; 林秋滿撰文",
+      "publisher": "臺北市 :天衛文化,2000g(2012印刷)",
+      "publish_date": "2012/01/01",
+      "subject": "歷史 ; 臺灣",
+      "isbn": "957490024X (第1冊 : 精裝) ; 9789574900244 (第1冊 : 精裝) ; 9789574900251 (第2冊 : 精裝) ; 9789574900268 (第3冊 : 精裝) ; 9789574900275 (第4冊 : 精裝) ; 9789574900282 (第5冊 : 精裝) ; 9789574900299 (第6冊 : 精裝) ; 9789574900305 (第7冊 : 精裝) ; 9789574900312 (第8冊 : 精裝) ; 9789574900329 (第9冊 : 精裝) ; 9789574900336 (第10冊 : 精裝)",
+      "thumbnail": "",
+      "click_count": 14829585,
+      "call_number": "733.2 1202",
+      "series": [
+        {
+          "book_id": "lib-book-2",
+          "id": "lib-series-1",
+          "series＿name": "V. 1(無附件可借)",
+          "waiting_people": 38,
+          "is_reservation": true,
+          "is_hot": true
+        },
+        {
+          "book_id": "lib-book-2",
+          "id": "lib-series-2",
+          "series＿name": "V. 1(有附件)",
+          "waiting_people": 0,
+          "is_reservation": true,
+          "is_hot": true
+        },
+        {
+          "book_id": "lib-book-2",
+          "id": "lib-series-3",
+          "series＿name": "V. 2(無附件可借)",
+          "waiting_people": 0,
+          "is_reservation": true,
+          "is_hot": false
+        },
+        {
+          "book_id": "lib-book-2",
+          "id": "lib-series-4",
+          "series＿name": "V. 2(有附件)",
+          "waiting_people": 0,
+          "is_reservation": true,
+          "is_hot": false
+        },
+        {
+          "book_id": "lib-book-2",
+          "id": "lib-series-5",
+          "series＿name": "V. 3(無附件可借)",
+          "waiting_people": 0,
+          "is_reservation": true,
+          "is_hot": false
+        },
+        {
+          "book_id": "lib-book-2",
+          "id": "lib-series-6",
+          "series＿name": "V. 3(有附件)",
+          "waiting_people": 0,
+          "is_reservation": true,
+          "is_hot": false
+        },
+        {
+          "book_id": "lib-book-2",
+          "id": "lib-series-7",
+          "series＿name": "V. 4(無附件可借)",
+          "waiting_people": 0,
+          "is_reservation": true,
+          "is_hot": false
+        },
+        {
+          "book_id": "lib-book-2",
+          "id": "lib-series-8",
+          "series＿name": "V. 4(有附件)",
+          "waiting_people": 0,
+          "is_reservation": true,
+          "is_hot": false
+        },
+        {
+          "book_id": "lib-book-2",
+          "id": "lib-series-9",
+          "series＿name": "V. 5(無附件可借)",
+          "waiting_people": 0,
+          "is_reservation": true,
+          "is_hot": false
+        },
+        {
+          "book_id": "lib-book-2",
+          "id": "lib-series-10",
+          "series＿name": "V. 5(有附件)",
+          "waiting_people": 0,
+          "is_reservation": true,
+          "is_hot": true
+        }
+      ],
+      "libraries": [
+        {
+          "id": "lib-2",
+          "name": "C21延吉",
+          "area": "大安區",
+          "address": "臺北市大安區延吉街236巷17號3-4樓",
+          "phone": "0227081964",
+          "lat": "25.036840205171266",
+          "lng": "121.55728022540654",
+          "service_infos": [
+            {
+              "title": "週二至週六",
+              "value": "8:30~21:00"
+            },
+            {
+              "title": "週日、週一",
+              "value": "9:00~17:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lib-book-3",
+      "book_name": "底層邏輯 : 看清這個世界的底牌 = The underlying logic : how to see the essence of things",
+      "author": "劉潤著",
+      "publisher": "臺北市 :時報文化出版企業股份有限公司,2022",
+      "publish_date": "2022/01/01",
+      "subject": "成功法",
+      "isbn": "9786263350717",
+      "thumbnail": "/images/library/IMG_2538.WEBP",
+      "click_count": 2327424,
+      "call_number": "177.2 7237",
+      "series": [
+        {
+          "book_id": "lib-book-3",
+          "id": "lib-series-1",
+          "series＿name": "",
+          "waiting_people": 3716,
+          "is_reservation": true,
+          "is_hot": true
+        }
+      ],
+      "libraries": [
+        {
+          "id": "lib-1",
+          "name": "BFB臺北市政府借書站(取書期限3日，無法申請請預約延長2日)",
+          "area": "信義區",
+          "address": "臺北市信義區市府路1號",
+          "phone": "02-27552823轉2104",
+          "lat": "25.037491",
+          "lng": "121.564088",
+          "service_infos": [
+            {
+              "title": "依臺北市政府開放時間"
+            }
+          ]
+        },
+        {
+          "id": "lib-2",
+          "name": "C21延吉",
+          "area": "大安區",
+          "address": "臺北市大安區延吉街236巷17號3-4樓",
+          "phone": "0227081964",
+          "lat": "25.036840205171266",
+          "lng": "121.55728022540654",
+          "service_infos": [
+            {
+              "title": "週二至週六",
+              "value": "8:30~21:00"
+            },
+            {
+              "title": "週日、週一",
+              "value": "9:00~17:00"
+            }
+          ]
+        },
+        {
+          "id": "lib-3",
+          "name": "B12三興",
+          "area": "信義區",
+          "address": "臺北市信義區吳興街156巷6號4、5樓",
+          "phone": "0287321063",
+          "lat": "25.029304444447725",
+          "lng": "121.56162172030848",
+          "service_infos": [
+            {
+              "title": "週二至週六",
+              "value": "8:30~21:00"
+            },
+            {
+              "title": "週日、週一",
+              "value": "9:00~17:00"
+            }
+          ]
+        },
+        {
+          "id": "lib-4",
+          "name": "B11永春",
+          "area": "信義區",
+          "address": "臺北市信義區松山路294號3樓",
+          "phone": "0227609730",
+          "lat": "25.043701651787917",
+          "lng": "121.57899765603491",
+          "service_infos": [
+            {
+              "title": "週二至週六",
+              "value": "8:30~21:00"
+            },
+            {
+              "title": "週日、週一",
+              "value": "9:00~17:00"
+            }
+          ]
+        },
+        {
+          "id": "lib-5",
+          "name": "CFB 信義安和借書站",
+          "area": "大安區",
+          "address": "臺北市大安區信義路四段212-1號號 B1",
+          "phone": "27552823-2104",
+          "lat": "25.03416873423933",
+          "lng": "121.55257274232868",
+          "service_infos": [
+            {
+              "title": "每日上午6時至晚間12時(依捷運站時間開放)"
+            }
+          ]
+        },
+        {
+          "id": "lib-6",
+          "name": "B13六合",
+          "area": "信義區",
+          "address": "臺北市信義區松仁路240巷19號3-5樓",
+          "phone": "0227292485",
+          "lat": "25.025116176981246",
+          "lng": "121.57040911000693",
+          "service_infos": [
+            {
+              "title": "週二至週六",
+              "value": "8:30~21:00"
+            },
+            {
+              "title": "週日、週一",
+              "value": "9:00~17:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lib-book-4",
+      "book_name": "The winners : a novel",
+      "author": "Fredrik Backman ; [translated by Neil Smith].",
+      "publisher": "New York :Simon & Schuster Audio,[2022] ,©2022",
+      "publish_date": "2022/01/01",
+      "subject": "Small cities ; Storms ; Corruption ; Revenge ; Alienation (Social psychology) ; Hockey teams ; Sweden",
+      "isbn": "9781797144917 ; 179714491X",
+      "thumbnail": "/images/library/IMG_2621.WEBP",
+      "click_count": 500,
+      "call_number": "",
+      "series": [
+        {
+          "book_id": "lib-book-4",
+          "id": "lib-series-1",
+          "series＿name": "N. 1",
+          "waiting_people": 0,
+          "is_reservation": true,
+          "is_hot": true
+        },
+        {
+          "book_id": "lib-book-4",
+          "id": "lib-series-2",
+          "series＿name": "N. 2",
+          "waiting_people": 0,
+          "is_reservation": true,
+          "is_hot": true
+        },
+        {
+          "book_id": "lib-book-4",
+          "id": "lib-series-3",
+          "series＿name": "N. 3",
+          "waiting_people": 0,
+          "is_reservation": true,
+          "is_hot": true
+        }
+      ],
+      "libraries": []
+    },
+    {
+      "id": "lib-book-5",
+      "book_name": "歡迎光臨錢天堂 : 神奇柑仔店大圖鑑",
+      "author": "廣嶋玲子文 ; jyajya圖 ; 王蘊潔譯",
+      "publisher": "台北市 :親子天下股份有限公司,2023",
+      "publish_date": "2023/01/01",
+      "subject": "兒童故事",
+      "isbn": "9786263055926",
+      "thumbnail": "/images/library/IMG_2629.JPG",
+      "click_count": 20400,
+      "call_number": "",
+      "series": [
+        {
+          "book_id": "lib-book-5",
+          "id": "lib-series-1",
+          "series＿name": "N. 1",
+          "waiting_people": 252,
+          "is_reservation": true,
+          "is_hot": true
+        }
+      ],
+      "libraries": [
+        {
+          "id": "lib-1",
+          "name": "BFB臺北市政府借書站(取書期限3日，無法申請請預約延長2日)",
+          "area": "信義區",
+          "address": "臺北市信義區市府路1號",
+          "phone": "02-27552823轉2104",
+          "lat": "25.037491",
+          "lng": "121.564088",
+          "service_infos": [
+            {
+              "title": "依臺北市政府開放時間"
+            }
+          ]
+        },
+        {
+          "id": "lib-2",
+          "name": "C21延吉",
+          "area": "大安區",
+          "address": "臺北市大安區延吉街236巷17號3-4樓",
+          "phone": "0227081964",
+          "lat": "25.036840205171266",
+          "lng": "121.55728022540654",
+          "service_infos": [
+            {
+              "title": "週二至週六",
+              "value": "8:30~21:00"
+            },
+            {
+              "title": "週日、週一",
+              "value": "9:00~17:00"
+            }
+          ]
+        },
+        {
+          "id": "lib-3",
+          "name": "B12三興",
+          "area": "信義區",
+          "address": "臺北市信義區吳興街156巷6號4、5樓",
+          "phone": "0287321063",
+          "lat": "25.029304444447725",
+          "lng": "121.56162172030848",
+          "service_infos": [
+            {
+              "title": "週二至週六",
+              "value": "8:30~21:00"
+            },
+            {
+              "title": "週日、週一",
+              "value": "9:00~17:00"
+            }
+          ]
+        },
+        {
+          "id": "lib-4",
+          "name": "B11永春",
+          "area": "信義區",
+          "address": "臺北市信義區松山路294號3樓",
+          "phone": "0227609730",
+          "lat": "25.043701651787917",
+          "lng": "121.57899765603491",
+          "service_infos": [
+            {
+              "title": "週二至週六",
+              "value": "8:30~21:00"
+            },
+            {
+              "title": "週日、週一",
+              "value": "9:00~17:00"
+            }
+          ]
+        },
+        {
+          "id": "lib-5",
+          "name": "CFB 信義安和借書站",
+          "area": "大安區",
+          "address": "臺北市大安區信義路四段212-1號號 B1",
+          "phone": "27552823-2104",
+          "lat": "25.03416873423933",
+          "lng": "121.55257274232868",
+          "service_infos": [
+            {
+              "title": "每日上午6時至晚間12時(依捷運站時間開放)"
+            }
+          ]
+        },
+        {
+          "id": "lib-6",
+          "name": "B13六合",
+          "area": "信義區",
+          "address": "臺北市信義區松仁路240巷19號3-5樓",
+          "phone": "0227292485",
+          "lat": "25.025116176981246",
+          "lng": "121.57040911000693",
+          "service_infos": [
+            {
+              "title": "週二至週六",
+              "value": "8:30~21:00"
+            },
+            {
+              "title": "週日、週一",
+              "value": "9:00~17:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lib-book-6",
+      "book_name": "神奇柑仔店. 15, 冒牌的長髮公主餅乾",
+      "author": "廣嶋玲子文 ; jyajya圖 ; 王蘊潔譯",
+      "publisher": "臺北市 :親子天下股份有限公司,2023",
+      "publish_date": "2023/02/01",
+      "subject": "日本兒童文學",
+      "isbn": "9786263055780 ; 6263055782 ; 9786263055988 ; 6263055987",
+      "thumbnail": "/images/library/IMG_2630.JPG",
+      "click_count": 500,
+      "series": [],
+      "libraries": []
+    }
+  ]
+}

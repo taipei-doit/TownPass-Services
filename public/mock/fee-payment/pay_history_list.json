@@ -1,0 +1,37 @@
+{
+  "//": "規費繳納-帳務紀錄",
+  "data": [
+    {
+      "id": "WG1209402456",
+      "payment_id": "fee-5",
+      "payment_name": "停車費",
+      "amount": 150,
+      "paid_at": "2024-11-16T02:34:53",
+      "status": "processing"
+    },
+    {
+      "id": "CE33140593",
+      "payment_id": "fee-5",
+      "payment_name": "停車費",
+      "amount": 150,
+      "paid_at": "2024-11-10T09:10:30",
+      "status": "paid"
+    },
+    {
+      "id": "BS1209402456",
+      "payment_id": "fee-5",
+      "payment_name": "停車費",
+      "amount": 60,
+      "paid_at": "2024-10-10T18:20:53",
+      "status": "paid"
+    },
+    {
+      "id": "AS1209402456",
+      "payment_id": "fee-11",
+      "payment_name": "公訓處自費課程",
+      "amount": 320,
+      "paid_at": "2023-08-02T20:10:40",
+      "status": "failed"
+    }
+  ]
+}

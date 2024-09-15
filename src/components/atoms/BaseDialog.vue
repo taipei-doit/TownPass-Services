@@ -4,10 +4,12 @@ import { Dialog, DialogPanel, DialogTitle, TransitionRoot, TransitionChild } fro
 const props = defineProps<{
   title?: string;
   content: string;
+  isSlot?: boolean;
   negativeText?: string;
   positiveText?: string;
   isAlert?: boolean;
   isCheck?: boolean;
+  isError?: boolean;
 }>();
 
 const emit = defineEmits(['onPositiveClick', 'onNegativeClick']);
@@ -31,7 +33,7 @@ const onNegativeClick = () => {
 
 <template>
   <TransitionRoot appear :show="isOpen" as="template">
-    <Dialog as="div" :open="isOpen" @close="setIsOpen" class="relative z-30">
+    <Dialog as="div" :open="isOpen" @close="setIsOpen" class="relative z-[9999]">
       <div class="fixed inset-0 bg-black/25">
         <div class="min-h-full flex justify-center items-center">
           <TransitionChild
@@ -52,12 +54,18 @@ const onNegativeClick = () => {
               <div v-else-if="props.isCheck" class="flex justify-center">
                 <img src="@/assets/images/check-icon.svg" class="w-24" />
               </div>
+              <div v-else-if="props.isError" class="flex justify-center">
+                <img src="@/assets/images/cancel-icon.svg" class="w-24" />
+              </div>
               <DialogTitle v-if="props.title" class="text-xl text-center font-extrabold">
                 {{ title }}
               </DialogTitle>
 
               <div class="px-4 my-5">
-                <p class="text-center font-bold">{{ props.content }}</p>
+                <p v-if="!props.isSlot" class="text-center font-bold whitespace-pre-line">
+                  {{ props.content }}
+                </p>
+                <slot v-else name="content"></slot>
               </div>
 
               <div

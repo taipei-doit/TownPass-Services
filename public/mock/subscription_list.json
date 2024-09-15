@@ -1,0 +1,92 @@
+{
+  "//": "市政訊息訂閱",
+  "data": {
+    "submit_target": {
+      "url": "https://example.api/",
+      "method": "POST",
+      "content_type": "application/json"
+    },
+    "data": [
+      {
+        "id": "sub-1",
+        "name": "體育樂園",
+        "is_subscribed": false,
+        "is_expand": false,
+        "icon": "/images/subscription/icon_sports_park.svg",
+        "description": "提供臺北市最新體育賽事活動資訊及運動場館租借服務。"
+      },
+      {
+        "id": "sub-2",
+        "name": "臺北旅遊網最新消息",
+        "is_subscribed": false,
+        "is_expand": false,
+        "icon": "/images/subscription/icon_taipei_travelnews.svg",
+        "description": "提供臺北旅遊網最新消息，特別推薦給玩臺北APP用戶。"
+      },
+      {
+        "id": "sub-3",
+        "name": "交通措施",
+        "is_subscribed": false,
+        "is_expand": false,
+        "icon": "/images/subscription/icon_traffic_info.svg",
+        "description": "提供用路人臺北市交通管制訊息。"
+      },
+      {
+        "id": "sub-4",
+        "name": "銀髮資訊",
+        "is_subscribed": false,
+        "is_expand": false,
+        "icon": "/images/subscription/icon_senior_info.svg",
+        "description": "提供銀髮多元福利資訊，幫助長者依各自需求做選擇。"
+      },
+      {
+        "id": "sub-5",
+        "name": "圖書到期通知",
+        "is_subscribed": false,
+        "is_expand": false,
+        "icon": "/images/subscription/icon_library_subscription.svg",
+        "description": "本服務讓您輕鬆獲得逾期催還、預約書到館、借閱資料即將到期通知，掌握圖書資料借閱狀況。"
+      },
+      {
+        "id": "sub-6",
+        "name": "新住民心服務",
+        "is_subscribed": false,
+        "is_expand": false,
+        "icon": "/images/subscription/icon_migrant_support.svg",
+        "description": "想知道新移民大小事嗎？提供您各項活動和課程訊息哦！"
+      },
+      {
+        "id": "sub-7",
+        "name": "健康報報",
+        "is_subscribed": false,
+        "is_expand": false,
+        "icon": "/images/subscription/icon_health_info.svg",
+        "description": "提供健康撇步及市民篩檢通知。"
+      },
+      {
+        "id": "sub-8",
+        "name": "停車費通知",
+        "is_subscribed": false,
+        "is_expand": false,
+        "icon": "/images/subscription/icon_parking.svg",
+        "description": "繳費到期前3天收到台北市路邊停車費通知。"
+      },
+      {
+        "id": "sub-9",
+        "name": "空品資訊",
+        "is_subscribed": false,
+        "is_expand": false,
+        "icon": "/images/subscription/icon_air_quality.svg",
+        "description": "每天早上8點提供區域內之空氣品質動態變化，幫助您規劃日常生活。"
+      },
+      {
+        "id": "sub-10",
+        "name": "防汛資訊",
+        "is_subscribed": false,
+        "is_expand": false,
+        "icon": "/images/subscription/icon_flood_info.svg",
+        "description": "於颱風期間提供水情、災情、紅黃線停車、淹水警示、水閘門啟閉等資訊。"
+      }
+    ]
+  }
+}

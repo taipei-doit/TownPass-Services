@@ -1,0 +1,83 @@
+{
+  "//": "圖書館服務-預約清單",
+  "data": [
+    {
+      "name": "可取書",
+      "data": [
+        {
+          "id": "lib-book-1",
+          "record_id": "lib-book-1lib-series-1",
+          "book_name": "我的第一本滑塊書 : 顏色配對",
+          "author": "Anton Poitier文 ; Maria Neradova圖",
+          "publisher": "新北市 :九童國際文化事業有限公司,[2016] ,©2016",
+          "publish_date": "2016/01/01",
+          "subject": "育兒 ; 親子遊戲",
+          "isbn": "9789864420780",
+          "thumbnail": "/images/library/IMG_2509.WEBP",
+          "click_count": 3450,
+          "call_number": "V. 1",
+          "selected_library": {
+            "id": "lib-2",
+            "name": "C21延吉",
+            "area": "大安區",
+            "address": "臺北市大安區延吉街236巷17號3-4樓",
+            "lat": 25.036840205171266,
+            "lng": 121.55728022540654
+          },
+          "status":"5",
+          "reservation_order": 1,
+          "extend_count": 0,
+          "reservation_date": "2024/08/27",
+          "processing_date": "2024/08/28",
+          "pickup_start_date": "2024/09/01",
+          "pickup_date": "",
+          "pickup_end_date": "2024/09/08",
+          "return_end_date": "",
+          "return_date": "",
+          "pickup_number": "080"
+        }
+      ]
+    },
+    {
+      "name": "處理中",
+      "data": [
+        {
+          "id": "lib-book-5",
+          "record_id": "lib-book-5lib-series-1",
+          "book_name": "歡迎光臨錢天堂 : 神奇柑仔店大圖鑑",
+          "author": "廣嶋玲子文 ; jyajya圖 ; 王蘊潔譯",
+          "publisher": "台北市 :親子天下股份有限公司,2023",
+          "publish_date": "2023/01/01",
+          "subject": "兒童故事",
+          "isbn": "9786263055926",
+          "thumbnail": "/images/library/IMG_2629.JPG",
+          "click_count": 20400,
+          "call_number": "",
+          "selected_library": {
+            "id": "lib-1",
+            "name": "BFB臺北市政府借書站(取書期限3日，無法申請請預約延長2日)",
+            "area": "信義區",
+            "address": "臺北市信義區市府路1號",
+            "lat": 25.037491,
+            "lng": 121.564088
+          },
+          "status":"3",
+          "reservation_order": 1,
+          "extend_count": 0,
+          "reservation_date": "2024/11/09",
+          "processing_date": "2024/11/10",
+          "pickup_start_date": "",
+          "pickup_date": "",
+          "pickup_end_date": "",
+          "return_end_date": "",
+          "return_date": "",
+          "pickup_number": ""
+        }
+      ]
+    },
+    {
+      "name": "排序中",
+      "data": []
+    }
+  ]
+}

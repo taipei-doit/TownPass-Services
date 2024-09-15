@@ -18,11 +18,16 @@
     "@headlessui/vue": "1.7.22",
     "@popperjs/core": "2.11.8",
     "@types/google.maps": "^3.55.10",
+    "@vueuse/core": "11.1.0",
     "axios": "^1.7.2",
+    "body-scroll-lock": "4.0.0-beta.0",
+    "date-fns": "4.1.0",
     "pinia": "2.1.7",
+    "qrcode.vue": "3.4.1",
     "v-calendar": "3.1.2",
     "vue": "3.4.21",
-    "vue-router": "4.3.0"
+    "vue-router": "4.3.0",
+    "vue3-google-map": "0.21.0"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "1.8.0",

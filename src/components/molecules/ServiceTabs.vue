@@ -1,11 +1,5 @@
 <script setup lang="ts">
-export interface TabsProps {
-  tabList?: {
-    id: number | string;
-    title: string;
-  }[];
-  contentType?: boolean;
-}
+import type { TabsProps } from '@/interfaces/tab-props.interface';
 
 const props = withDefaults(defineProps<TabsProps>(), {
   tabList: () => [
@@ -62,7 +56,7 @@ const activeTab = defineModel({ default: 0 });
 }
 
 .tab-label {
-  @apply text-grey-700 font-bold mb-2;
+  @apply text-grey-700 bg-white font-bold mb-2;
 
   &__content-type {
     @apply rounded-t-[10px] border-x border-t border-grey-200;

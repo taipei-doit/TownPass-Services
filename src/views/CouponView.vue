@@ -40,7 +40,6 @@ export interface Ticket {
   ticket_illustrate: string[];
   spot_introduce: string;
   instructions: string[];
-  purchase_link: string;
 }
 
 export interface Coupon {

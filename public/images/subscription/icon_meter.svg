@@ -1,0 +1,14 @@
+<svg data-name="icon_home_self-reporting water meter_45" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+    <g data-name="Group 16412">
+        <g data-name="Group 16408">
+            <path data-name="Rectangle 8026" transform="translate(6 5.999)" style="fill:rgba(255,255,255,.01)" d="M0 0h34v34H0z"/>
+            <path data-name="Path 13581" d="M6.433 29.839a15.136 15.136 0 1 1 25.839-10.7" transform="translate(5.376 5.412)" style="stroke-linejoin:round;stroke-linecap:round;stroke-width:2px;stroke:#555;fill:none"/>
+            <path data-name="Path 13582" d="M12.821 28.443A9.632 9.632 0 0 1 19.632 12" transform="translate(2.88 2.916)" style="stroke-linecap:round;stroke-width:2px;stroke:#555;fill:none"/>
+            <path data-name="Path 13583" d="M24 23.5V18" transform="translate(-1.488 1.044)" style="stroke-linejoin:round;stroke-linecap:round;stroke-width:2px;stroke:#555;fill:none"/>
+        </g>
+        <g data-name="Group 16409">
+            <path data-name="Path 13561" d="m230.658 232.7-5.158 7.1a4.972 4.972 0 0 0 .067 5.14 5.9 5.9 0 0 0 10.182 0 4.966 4.966 0 0 0 .067-5.14z" transform="translate(-200.143 -208.58)" style="stroke:#2eb6c7;stroke-linejoin:round;stroke-linecap:round;stroke-width:2px;fill:none"/>
+        </g>
+    </g>
+    <path data-name="Rectangle 8034" style="fill:none" d="M0 0h45v45H0z"/>
+</svg>
