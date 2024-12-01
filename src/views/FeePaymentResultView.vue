@@ -6,7 +6,6 @@ import FixedTitleSection from '@/components/molecules/FixedTitleSection.vue';
 import BaseCheckbox from '@/components/atoms/BaseCheckbox.vue';
 import { computed, ref } from 'vue';
 import BaseButton from '@/components/atoms/BaseButton.vue';
-import BaseDialog from '@/components/atoms/BaseDialog.vue';
 
 const route = useRoute();
 const router = useRouter();
@@ -30,8 +29,6 @@ const totalAmount = computed(() => {
 
 const paymentModel = ref<string[]>([]);
 
-const isFinishDialogOpen = ref(false);
-
 const selectAllBills = () => {
   const allPaymentIds = enableBillList.value.map((item) => item.id);
   if (paymentModel.value.length === allPaymentIds.length) {
@@ -47,8 +44,12 @@ const selectAllBills = () => {
 
 /** 前往繳費 */
 const onSubmitClick = () => {
-  // 串接繳費 API
-  isFinishDialogOpen.value = true;
+  console.log(paymentModel.value);
+
+  router.push({
+    name: 'payment',
+    params: { id: paymentItem.value.id, bill_id: paymentModel.value.join(',') }
+  });
 };
 </script>
 
@@ -94,14 +95,6 @@ const onSubmitClick = () => {
         前往繳費
       </BaseButton>
     </div>
-    <BaseDialog
-      v-model="isFinishDialogOpen"
-      :is-check="true"
-      title="繳費完成"
-      content=""
-      positiveText="確認"
-      @onPositiveClick="router.push({ name: 'fee-payment-others' })"
-    />
   </template>
   <template v-else>
     <div class="p-8 mt-20 text-center">
@@ -111,7 +104,11 @@ const onSubmitClick = () => {
           paymentItem.name
         }}」待繳帳單，或可能已於其他通路繳費，欲了解繳費狀態，請於上班時間撥打(02)2726-9600洽詢，謝謝
       </p>
-      <BaseButton :shape="'rounded'" class="mt-10 w-1/2" @click="router.back()">
+      <BaseButton
+        :shape="'rounded'"
+        class="mt-10 w-1/2"
+        @click="router.push({ name: 'fee-payment-others' })"
+      >
         回到城市通
       </BaseButton>
     </div>

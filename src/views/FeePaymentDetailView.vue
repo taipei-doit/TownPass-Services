@@ -2,13 +2,14 @@
 import { ref, onMounted, computed, reactive } from 'vue';
 import FeePaymentForm from '@/components/molecules/FeePaymentForm.vue';
 import BaseButton from '@/components/atoms/BaseButton.vue';
-import { useRoute } from 'vue-router';
+import { useRoute, useRouter } from 'vue-router';
 import { storeToRefs } from 'pinia';
 import { useFeePaymentStore } from '@/stores/fee-payment';
 import FeePaymentTabsView from '@/components/organisms/FeePaymentTabsView.vue';
 import FixedTitleSection from '@/components/molecules/FixedTitleSection.vue';
 
 const route = useRoute();
+const router = useRouter();
 const paymentStore = useFeePaymentStore();
 const { paymentList } = storeToRefs(paymentStore);
 
@@ -29,7 +30,11 @@ const tabList = computed(() => {
 
 const activeTab = ref(0);
 
-const onScanClick = () => {};
+const redirectToScan = (tab: number) => {
+  if (tab === activeTab.value) {
+    router.push({ name: 'fee-payment-scan' });
+  }
+};
 
 onMounted(() => {});
 </script>
@@ -45,8 +50,7 @@ onMounted(() => {});
       <!-- scan -->
       <template v-else>
         <div class="text-grey-400 text-center mt-20">
-          <!-- <img src="@/assets/images/illustrations_no_data.svg" class="mx-auto" alt="nodata-icon" /> -->
-          <BaseButton @click="onScanClick()"> 開啟掃描 </BaseButton>
+          {{ redirectToScan(0) }}
         </div>
       </template>
     </template>
@@ -58,8 +62,7 @@ onMounted(() => {});
       <!-- scan -->
       <template v-else>
         <div class="text-grey-400 text-center mt-20">
-          <!-- <img src="@/assets/images/illustrations_no_data.svg" class="mx-auto" alt="nodata-icon" /> -->
-          <BaseButton @click="onScanClick()"> 開啟掃描 </BaseButton>
+          {{ redirectToScan(1) }}
         </div>
       </template>
     </template>
@@ -71,8 +74,7 @@ onMounted(() => {});
       <!-- scan -->
       <template v-else>
         <div class="text-grey-400 text-center mt-20">
-          <!-- <img src="@/assets/images/illustrations_no_data.svg" class="mx-auto" alt="nodata-icon" /> -->
-          <BaseButton @click="onScanClick()"> 開啟掃描 </BaseButton>
+          {{ redirectToScan(2) }}
         </div>
       </template>
     </template>

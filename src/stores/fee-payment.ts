@@ -19,9 +19,15 @@ export const useFeePaymentStore = defineStore('fee-payment', () => {
   /** 繳費紀錄原始列表 */
   const rawHistoryList = ref<PaymentHistory[]>(payHistoryListJson.data);
 
+  const paymentInfo = ref({
+    total: 0,
+    way: ''
+  });
+
   return {
     paymentList,
     billList,
-    rawHistoryList
+    rawHistoryList,
+    paymentInfo
   };
 });

@@ -165,23 +165,51 @@ const activeData = computed(() => {
 </script>
 
 <template>
-  <ServiceTabsView v-model="activeTab" :tab-list="tabList">
-    <template #tab0>
-      <div
-        class="pt-[18px] min-h-[calc(100vh-43px)]"
-        :class="{
-          'bg-grey-100': activeData && activeData.length
-        }"
-      >
-        <ServiceTabsView
-          v-model="activeTicketStatus"
-          :tab-list="admissionStatusList"
-          :contentType="true"
+  <div class="pt-12">
+    <div
+      class="fixed top-0 left-0 z-10 w-screen bg-white py-2 px-4 flex justify-between border-b border-b-gray-300"
+    >
+      <RouterLink :to="{ name: 'coupon' }">
+        <img src="@/assets/images/down-icon.svg" class="rotate-90" />
+      </RouterLink>
+      <h1 class="font-bold text-gray-700">票夾</h1>
+      <div />
+    </div>
+    <ServiceTabsView v-model="activeTab" :tab-list="tabList">
+      <template #tab0>
+        <div
+          class="min-h-[calc(100vh-84px)]"
+          :class="{
+            'bg-grey-100': activeData && activeData.length
+          }"
         >
-          <template #tab0>
-            <ul v-if="activeData && activeData.length" class="p-4 flex flex-col gap-y-3">
-              <li v-for="item in activeData" :key="item.id">
-                <RouterLink :to="{ name: 'ticket-exchange', params: { id: item.id } }">
+          <ServiceTabsView
+            v-model="activeTicketStatus"
+            :tab-list="admissionStatusList"
+            :contentType="true"
+          >
+            <template #tab0>
+              <ul v-if="activeData && activeData.length" class="p-4 flex flex-col gap-y-3">
+                <li v-for="item in activeData" :key="item.id">
+                  <RouterLink :to="{ name: 'ticket-exchange', params: { id: item.id } }">
+                    <BaseTicket
+                      :name="item.name"
+                      :img="item.img_url"
+                      :date="item.date"
+                      :total="item.total"
+                      :type="activeTicketStatusType"
+                    />
+                  </RouterLink>
+                </li>
+              </ul>
+              <div v-else class="flex flex-col justify-center items-center pt-28">
+                <img src="@/assets/images/admission-icon.svg" />
+                <span class="text-[#5AB4C5] font-semibold text-lg my-5">目前無入場券</span>
+              </div>
+            </template>
+            <template #tab1>
+              <ul v-if="activeData && activeData.length" class="p-4 flex flex-col gap-y-3">
+                <li v-for="item in activeData" :key="item.id">
                   <BaseTicket
                     :name="item.name"
                     :img="item.img_url"
@@ -189,120 +217,103 @@ const activeData = computed(() => {
                     :total="item.total"
                     :type="activeTicketStatusType"
                   />
-                </RouterLink>
-              </li>
-            </ul>
-            <div v-else class="flex flex-col justify-center items-center pt-28">
-              <img src="@/assets/images/admission-icon.svg" />
-              <span class="text-[#5AB4C5] font-semibold text-lg my-5">目前無入場券</span>
-            </div>
-          </template>
-          <template #tab1>
-            <ul v-if="activeData && activeData.length" class="p-4 flex flex-col gap-y-3">
-              <li v-for="item in activeData" :key="item.id">
-                <BaseTicket
-                  :name="item.name"
-                  :img="item.img_url"
-                  :date="item.date"
-                  :total="item.total"
-                  :type="activeTicketStatusType"
-                />
-              </li>
-            </ul>
-            <div v-else class="flex flex-col justify-center items-center pt-28">
-              <img src="@/assets/images/admission-icon.svg" />
-              <span class="text-[#5AB4C5] font-semibold text-lg my-5">目前無入場券</span>
-            </div>
-          </template>
-        </ServiceTabsView>
-      </div>
-    </template>
-    <template #tab1>
-      <div
-        class="pt-[18px] min-h-[calc(100vh-43px)]"
-        :class="{
-          'bg-grey-100': activeData && activeData.length
-        }"
-      >
-        <ServiceTabsView
-          v-model="activeTicketStatus"
-          :tab-list="couponStatusList"
-          :contentType="true"
+                </li>
+              </ul>
+              <div v-else class="flex flex-col justify-center items-center pt-28">
+                <img src="@/assets/images/admission-icon.svg" />
+                <span class="text-[#5AB4C5] font-semibold text-lg my-5">目前無入場券</span>
+              </div>
+            </template>
+          </ServiceTabsView>
+        </div>
+      </template>
+      <template #tab1>
+        <div
+          class="pt-[18px] min-h-[calc(100vh-84px)]"
+          :class="{
+            'bg-grey-100': activeData && activeData.length
+          }"
         >
-          <template #tab0>
-            <ul v-if="activeData && activeData.length" class="p-4 flex flex-col gap-y-3">
-              <li v-for="item in activeData" :key="item.id">
-                <RouterLink
-                  :to="{
-                    name: 'coupon-detail',
-                    params: { id: item.id },
-                    query: { needUse: 'Y', walletTab: '2' }
-                  }"
+          <ServiceTabsView
+            v-model="activeTicketStatus"
+            :tab-list="couponStatusList"
+            :contentType="true"
+          >
+            <template #tab0>
+              <ul v-if="activeData && activeData.length" class="p-4 flex flex-col gap-y-3">
+                <li v-for="item in activeData" :key="item.id">
+                  <RouterLink
+                    :to="{
+                      name: 'coupon-detail',
+                      params: { id: item.id },
+                      query: { needUse: 'Y', walletTab: '2' }
+                    }"
+                  >
+                    <BaseTicket
+                      :name="item.name"
+                      :img="item.img_url"
+                      :date="item.date"
+                      :type="activeTicketStatusType"
+                    />
+                  </RouterLink>
+                </li>
+              </ul>
+              <div v-else class="flex flex-col justify-center items-center pt-28">
+                <img src="@/assets/images/sales-icon.svg" />
+                <span class="text-[#5AB4C5] font-semibold text-lg my-5">馬上領取優惠券</span>
+                <BaseButton
+                  :link="true"
+                  :routeInfo="{ name: 'coupon', query: { tab: '2' } }"
+                  class="w-44"
                 >
+                  查看優惠
+                </BaseButton>
+              </div>
+            </template>
+            <template #tab1>
+              <ul v-if="activeData && activeData.length" class="p-4 flex flex-col gap-y-3">
+                <li v-for="item in activeData" :key="item.id">
                   <BaseTicket
                     :name="item.name"
                     :img="item.img_url"
                     :date="item.date"
+                    :total="item.total"
                     :type="activeTicketStatusType"
                   />
-                </RouterLink>
-              </li>
-            </ul>
-            <div v-else class="flex flex-col justify-center items-center pt-28">
-              <img src="@/assets/images/sales-icon.svg" />
-              <span class="text-[#5AB4C5] font-semibold text-lg my-5">馬上領取優惠券</span>
-              <BaseButton
-                :link="true"
-                :routeInfo="{ name: 'coupon', query: { tab: '2' } }"
-                class="w-44"
-              >
-                查看優惠
-              </BaseButton>
-            </div>
-          </template>
-          <template #tab1>
-            <ul v-if="activeData && activeData.length" class="p-4 flex flex-col gap-y-3">
-              <li v-for="item in activeData" :key="item.id">
-                <BaseTicket
-                  :name="item.name"
-                  :img="item.img_url"
-                  :date="item.date"
-                  :total="item.total"
-                  :type="activeTicketStatusType"
-                />
-              </li>
-            </ul>
-            <div v-else class="flex flex-col justify-center items-center pt-28">
-              <img src="@/assets/images/sales-icon.svg" />
-              <span class="text-[#5AB4C5] font-semibold text-lg my-5">馬上領取優惠券</span>
-              <BaseButton
-                :link="true"
-                :routeInfo="{ name: 'coupon', query: { tab: '2' } }"
-                class="w-44"
-              >
-                查看優惠
-              </BaseButton>
-            </div>
-          </template>
-          <template #tab2>
-            <ul v-if="activeData && activeData.length" class="p-4 flex flex-col gap-y-3">
-              <li v-for="item in activeData" :key="item.id">
-                <BaseTicket
-                  :name="item.name"
-                  :img="item.img_url"
-                  :date="item.date"
-                  :total="item.total"
-                  :type="activeTicketStatusType"
-                />
-              </li>
-            </ul>
-            <div v-else class="flex flex-col justify-center items-center pt-28">
-              <img src="@/assets/images/sales-icon.svg" />
-              <span class="text-[#5AB4C5] font-semibold text-lg my-5">無優惠券過期失效</span>
-            </div>
-          </template>
-        </ServiceTabsView>
-      </div>
-    </template>
-  </ServiceTabsView>
+                </li>
+              </ul>
+              <div v-else class="flex flex-col justify-center items-center pt-28">
+                <img src="@/assets/images/sales-icon.svg" />
+                <span class="text-[#5AB4C5] font-semibold text-lg my-5">馬上領取優惠券</span>
+                <BaseButton
+                  :link="true"
+                  :routeInfo="{ name: 'coupon', query: { tab: '2' } }"
+                  class="w-44"
+                >
+                  查看優惠
+                </BaseButton>
+              </div>
+            </template>
+            <template #tab2>
+              <ul v-if="activeData && activeData.length" class="p-4 flex flex-col gap-y-3">
+                <li v-for="item in activeData" :key="item.id">
+                  <BaseTicket
+                    :name="item.name"
+                    :img="item.img_url"
+                    :date="item.date"
+                    :total="item.total"
+                    :type="activeTicketStatusType"
+                  />
+                </li>
+              </ul>
+              <div v-else class="flex flex-col justify-center items-center pt-28">
+                <img src="@/assets/images/sales-icon.svg" />
+                <span class="text-[#5AB4C5] font-semibold text-lg my-5">無優惠券過期失效</span>
+              </div>
+            </template>
+          </ServiceTabsView>
+        </div>
+      </template>
+    </ServiceTabsView>
+  </div>
 </template>

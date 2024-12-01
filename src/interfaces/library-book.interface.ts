@@ -52,7 +52,10 @@ export interface Library {
   /** 行政區 */
   area: string;
   /** 地址 */
-  address: string;
+  address: {
+    text: string;
+    map: string;
+  };
   /** 電話 */
   phone: string;
   /** 經度 */

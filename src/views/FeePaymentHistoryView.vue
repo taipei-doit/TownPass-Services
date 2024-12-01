@@ -179,51 +179,57 @@ watch([searchYear, searchType, searchStatus], () => {
         <p class="p-5 border-b border-gray-300">
           {{ item.month }}
         </p>
-        <div class="flex" v-for="(childrenItem, cheildrenIndex) in item.data" :key="cheildrenIndex">
-          <div
-            class="text-center text-gray-500 p-5 border-r border-b border-gray-300 flex items-center w-[82px]"
+        <div v-for="(childrenItem, cheildrenIndex) in item.data" :key="cheildrenIndex">
+          <router-link
+            :to="{ name: 'fee-payment-history-detail', params: { id: childrenItem.id } }"
           >
-            <p class="mx-auto">{{ new Date(childrenItem.paid_at).getDate() }}日</p>
-          </div>
-          <div
-            class="p-3 border-r border-b border-gray-300 flex-1 flex justify-between items-center"
-          >
-            <div class="relative">
-              <p>{{ childrenItem.payment_name }}</p>
-              <p class="text-grey-400">{{ childrenItem.id }}</p>
-              <p>$ {{ childrenItem.amount }}</p>
+            <div class="flex">
+              <div
+                class="text-center text-gray-500 p-5 border-r border-b border-gray-300 flex items-center w-[82px]"
+              >
+                <p class="mx-auto">{{ new Date(childrenItem.paid_at).getDate() }}日</p>
+              </div>
+              <div
+                class="p-3 border-r border-b border-gray-300 flex-1 flex justify-between items-center"
+              >
+                <div class="relative">
+                  <p>{{ childrenItem.payment_name }}</p>
+                  <p class="text-grey-400">{{ childrenItem.id }}</p>
+                  <p>$ {{ childrenItem.amount }}</p>
+                </div>
+                <template v-if="childrenItem.status === 'paid'">
+                  <div class="text-center w-[50px]">
+                    <img
+                      src="@/assets/images/icon_CaseAcceptDefault.svg"
+                      alt="icon-CaseAcceptDefault"
+                      class="mx-auto"
+                    />
+                    <p class="text-primary-500">成功</p>
+                  </div>
+                </template>
+                <template v-if="childrenItem.status === 'processing'">
+                  <div class="text-center w-[50px]">
+                    <img
+                      src="@/assets/images/icon_case-running-default.svg"
+                      alt="icon-case-running-default"
+                      class="mx-auto"
+                    />
+                    <p>處理中</p>
+                  </div>
+                </template>
+                <template v-if="childrenItem.status === 'failed'">
+                  <div class="text-center w-[50px]">
+                    <img
+                      src="@/assets/images/icon_bill-void-24.svg"
+                      alt="icon_bill-void-24"
+                      class="mx-auto"
+                    />
+                    <p class="text-warn-200">失敗</p>
+                  </div>
+                </template>
+              </div>
             </div>
-            <template v-if="childrenItem.status === 'paid'">
-              <div class="text-center w-[50px]">
-                <img
-                  src="@/assets/images/icon_CaseAcceptDefault.svg"
-                  alt="icon-CaseAcceptDefault"
-                  class="mx-auto"
-                />
-                <p class="text-primary-500">成功</p>
-              </div>
-            </template>
-            <template v-if="childrenItem.status === 'processing'">
-              <div class="text-center w-[50px]">
-                <img
-                  src="@/assets/images/icon_case-running-default.svg"
-                  alt="icon-case-running-default"
-                  class="mx-auto"
-                />
-                <p>處理中</p>
-              </div>
-            </template>
-            <template v-if="childrenItem.status === 'failed'">
-              <div class="text-center w-[50px]">
-                <img
-                  src="@/assets/images/icon_bill-void-24.svg"
-                  alt="icon_bill-void-24"
-                  class="mx-auto"
-                />
-                <p class="text-warn-200">失敗</p>
-              </div>
-            </template>
-          </div>
+          </router-link>
         </div>
       </div>
     </template>

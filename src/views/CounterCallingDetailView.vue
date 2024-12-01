@@ -49,8 +49,12 @@ const getSubCounterList = () => {
   }
 };
 
+const onPhoneCallClick = (phone: string) => {
+  useConnectionMessage('phone_call', phone);
+};
+
 const onMapOpenClick = () => {
-  useConnectionMessage('launch_map', subCounterItem.value?.info.address);
+  useConnectionMessage('launch_map', subCounterItem.value?.info.address.map);
 };
 
 const toggleRegularlyUsedItem = (counterItem: SubCounter) => {
@@ -121,14 +125,18 @@ const toggleRegularlyUsedItem = (counterItem: SubCounter) => {
       <h5 class="font-bold">聯絡資訊</h5>
       <div class="w-full flex flex-col">
         <a
-          :href="subCounterItem.info.address"
+          href="javascript:void(0)"
           class="link-wrapper right-arrow"
           @click.prevent="isMapDialogOpen = true"
         >
           <img src="@/assets/images/location-icon.svg" class="icon" alt="icon_map" />
-          <span class="mx-1">{{ subCounterItem.info.address }}</span>
+          <span class="mx-1">{{ subCounterItem.info.address.text }}</span>
         </a>
-        <a :href="`tel://${subCounterItem.info.tel}`" class="link-wrapper right-arrow">
+        <a
+          href="javascript:void(0)"
+          class="link-wrapper right-arrow"
+          @click="onPhoneCallClick(subCounterItem.info.tel)"
+        >
           <img src="@/assets/images/icon_tel.svg" class="icon" alt="icon_tel" />
           <span class="mx-1">{{ subCounterItem.info.tel }}</span>
         </a>

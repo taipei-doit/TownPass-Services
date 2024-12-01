@@ -20,11 +20,14 @@
             "id": "lib-2",
             "name": "C21延吉",
             "area": "大安區",
-            "address": "臺北市大安區延吉街236巷17號3-4樓",
+            "address": {
+              "text": "臺北市大安區延吉街236巷17號3-4樓",
+              "map": "https://maps.app.goo.gl/CDc4f1i6N7cK53556"
+            },
             "lat": 25.036840205171266,
             "lng": 121.55728022540654
           },
-          "status":"5",
+          "status": "5",
           "reservation_order": 1,
           "extend_count": 0,
           "reservation_date": "2024/08/27",
@@ -57,11 +60,14 @@
             "id": "lib-1",
             "name": "BFB臺北市政府借書站(取書期限3日，無法申請請預約延長2日)",
             "area": "信義區",
-            "address": "臺北市信義區市府路1號",
+            "address": {
+              "text": "臺北市信義區市府路1號",
+              "map": "https://maps.app.goo.gl/Xs8jEHqdEffssejv7"
+            },
             "lat": 25.037491,
             "lng": 121.564088
           },
-          "status":"3",
+          "status": "3",
           "reservation_order": 1,
           "extend_count": 0,
           "reservation_date": "2024/11/09",

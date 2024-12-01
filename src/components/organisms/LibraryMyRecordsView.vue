@@ -59,7 +59,7 @@ const onExpandClick = (name: string) => {
 };
 
 const onMapOpenClick = (subItem?: LibraryRecords) => {
-  useConnectionMessage('launch_map', subItem?.selected_library.address);
+  useConnectionMessage('launch_map', subItem?.selected_library.address.map);
 };
 
 const selectedSubItem = ref<LibraryRecords>();
@@ -171,7 +171,7 @@ onMounted(() => {
                         <p class="line-clamp-1">索書號：{{ subItem.call_number }}</p>
                         <p class="line-clamp-1">
                           取書館：<a
-                            :href="subItem.selected_library.address"
+                            href="javascript:void(0)"
                             class="col-span-8 underline"
                             @click.prevent="
                               isMapDialogOpen = true;

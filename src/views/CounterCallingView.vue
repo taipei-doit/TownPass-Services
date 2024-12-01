@@ -18,7 +18,10 @@ export interface SubCounter {
   name: string;
   is_regularly_used: boolean;
   info: {
-    address: string;
+    address: {
+      text: string;
+      map: string;
+    };
     tel: string;
     fax: string;
   };

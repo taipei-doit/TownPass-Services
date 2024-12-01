@@ -11,7 +11,10 @@
           "name": "古亭地政事務所",
           "is_regularly_used": false,
           "info": {
-            "address": "116057 臺北市文山區萬隆街47之12號2至4樓",
+            "address": {
+              "text": "116057 臺北市文山區萬隆街47之12號2至4樓",
+              "map": "https://maps.app.goo.gl/K93h62nMcAB4CWEN8"
+            },
             "tel": "02-2935-5369",
             "fax": "02-2935-5373"
           },
@@ -41,7 +44,10 @@
           "name": "中山地政事務所",
           "is_regularly_used": false,
           "info": {
-            "address": "104256 臺北市中山區松江路357巷1號",
+            "address": {
+              "text": "104256 臺北市中山區松江路357巷1號",
+              "map": "https://maps.app.goo.gl/9bqtQLszUhfDvpE56"
+            },
             "tel": "02-2502-2881",
             "fax": "02-2502-2982"
           },
@@ -84,7 +90,10 @@
           "name": "萬華區戶政事務所",
           "is_regularly_used": false,
           "info": {
-            "address": "臺北市萬華區和平西路三段120號4樓",
+            "address": {
+              "text": "臺北市萬華區和平西路三段120號4樓",
+              "map": "https://maps.app.goo.gl/ERmzqfrf3879aQZf8"
+            },
             "tel": "02-2306-2706",
             "fax": "02-2308-2868"
           },
@@ -114,7 +123,10 @@
           "name": "中正區戶政事務所",
           "is_regularly_used": false,
           "info": {
-            "address": "臺北市中正區忠孝東路一段108號7樓",
+            "address": {
+              "text": "臺北市中正區忠孝東路一段108號7樓",
+              "map": "https://maps.app.goo.gl/fnGp9Exk6niFwYBr9"
+            },
             "tel": "02-2394-8838",
             "fax": "02-2394-2540"
           },
@@ -145,7 +157,10 @@
           "name": "臺北市萬華區公所",
           "is_regularly_used": false,
           "info": {
-            "address": "10855 臺北市萬華區和平西路三段120號10~13樓",
+            "address": {
+              "text": "10855 臺北市萬華區和平西路三段120號10~13樓",
+              "map": "https://maps.app.goo.gl/AkKQKjCKeueV4XX69"
+            },
             "tel": "02-2306-4468",
             "fax": "02-2306-8052"
           },
@@ -175,7 +190,10 @@
           "name": "臺北市中正區公所",
           "is_regularly_used": false,
           "info": {
-            "address": "10050 臺北市中正區忠孝東路一段108號8樓",
+            "address": {
+              "text": "10050 臺北市中正區忠孝東路一段108號8樓",
+              "map": "https://maps.app.goo.gl/6dydc2thppMBZdnv7"
+            },
             "tel": "02-2341-6721",
             "fax": ""
           },
@@ -218,7 +236,10 @@
           "name": "萬華分處",
           "is_regularly_used": false,
           "info": {
-            "address": "108220 臺北市萬華區和平西路三段120號6樓",
+            "address": {
+              "text": "108220 臺北市萬華區和平西路三段120號6樓",
+              "map": "https://maps.app.goo.gl/VV5vKU9mP4FHzvQ4A"
+            },
             "tel": "02-2302-1191",
             "fax": "02-2302-7245"
           },
@@ -236,7 +257,10 @@
           "name": "大同分處",
           "is_regularly_used": false,
           "info": {
-            "address": "10363 臺北市大同區昌吉街57號3樓之2",
+            "address": {
+              "text": "10363 臺北市大同區昌吉街57號3樓之2",
+              "map": "https://maps.app.goo.gl/pmqjyJMvhcBqqCMh7"
+            },
             "tel": "02-2587-3650",
             "fax": "02-2593-0103"
           },
@@ -261,7 +285,10 @@
           "name": "艋舺就業服務站",
           "is_regularly_used": false,
           "info": {
-            "address": "臺北市萬華區艋舺大道101號3樓",
+            "address": {
+              "text": "臺北市萬華區艋舺大道101號3樓",
+              "map": "https://maps.app.goo.gl/rPQDdM6t45uH568Z9"
+            },
             "tel": "02-2308-5231",
             "fax": "02-2308-5352"
           },
@@ -285,7 +312,10 @@
           "name": "西門就業服務站",
           "is_regularly_used": false,
           "info": {
-            "address": "臺北市萬華區峨嵋街81號",
+            "address": {
+              "text": "臺北市萬華區峨嵋街81號",
+              "map": "https://maps.app.goo.gl/5wYk9nYa2fByYuSn9"
+            },
             "tel": "02-2381-3344",
             "fax": "02-2371-9805"
           },

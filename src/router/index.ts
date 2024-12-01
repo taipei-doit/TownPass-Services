@@ -41,6 +41,10 @@ import FeePaymentSearchView from '@/views/FeePaymentSearchView.vue';
 import FeePaymentDetailView from '@/views/FeePaymentDetailView.vue';
 import FeePaymentResultView from '@/views/FeePaymentResultView.vue';
 import FeePaymentHistoryView from '@/views/FeePaymentHistoryView.vue';
+import FeePaymentHistoryDetailView from '@/views/FeePaymentHistoryDetailView.vue';
+import FeePaymentScanView from '@/views/FeePaymentScanView.vue';
+import FeePaymentStepView from '@/views/FeePaymentStepView.vue';
+import FeePaymentFinishedView from '@/views/FeePaymentFinishedView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -348,12 +352,22 @@ const router = createRouter({
           }
         },
         {
-          path: 'success/:id',
+          path: 'result/:id',
           name: 'fee-payment-result',
           component: FeePaymentResultView,
           meta: {
             title: '繳費項目'
           }
+        },
+        {
+          path: 'payment/:id/:bill_id',
+          name: 'payment',
+          component: FeePaymentStepView
+        },
+        {
+          path: 'fee-payment-finished/:id',
+          name: 'fee-payment-finished',
+          component: FeePaymentFinishedView
         },
         {
           path: 'search',
@@ -369,6 +383,22 @@ const router = createRouter({
           component: FeePaymentHistoryView,
           meta: {
             title: '帳務紀錄'
+          }
+        },
+        {
+          path: 'history/:id',
+          name: 'fee-payment-history-detail',
+          component: FeePaymentHistoryDetailView,
+          meta: {
+            title: '帳單明細'
+          }
+        },
+        {
+          path: 'scan',
+          name: 'fee-payment-scan',
+          component: FeePaymentScanView,
+          meta: {
+            title: '掃描'
           }
         }
       ]

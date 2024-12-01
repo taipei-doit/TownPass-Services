@@ -45,7 +45,7 @@ const scrollToTop = () => {
           <p class="underline font-bold mb-2">{{ spot.name }}</p>
           <div class="flex mb-2">
             <img src="@/assets/images/icon-geo.svg" alt="" />
-            <span>{{ spot.address }}</span>
+            <span>{{ spot.address.text }}</span>
           </div>
           <div class="flex text-grey-500">
             <span>{{ spot.distance }}公里</span>
