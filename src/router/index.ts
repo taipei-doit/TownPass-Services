@@ -235,7 +235,7 @@ const router = createRouter({
     {
       path: '/disaster-report',
       meta: {
-        title: '災防通報'
+        title: '災情通報'
       },
       children: [
         {
