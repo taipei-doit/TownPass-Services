@@ -286,7 +286,7 @@ const router = createRouter({
           name: 'library-service',
           component: LibraryServiceView,
           meta: {
-            title: '圖書館服務'
+            title: '圖書借閱'
           }
         },
         {
